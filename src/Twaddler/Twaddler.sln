@@ -5,6 +5,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Twaddler", "Twaddler.fsproj
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Twaddler.DictionaryCompiler", "..\Twaddler.DictionaryCompiler\Twaddler.DictionaryCompiler.fsproj", "{AE75E68E-7D7B-4EB9-A5BB-80250390546C}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Twaddler.BootstrapIconCompiler", "..\Twaddler.BootstrapIconCompiler\Twaddler.BootstrapIconCompiler.fsproj", "{D04CF778-C70B-41C2-907E-C652A180D303}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{AE75E68E-7D7B-4EB9-A5BB-80250390546C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE75E68E-7D7B-4EB9-A5BB-80250390546C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE75E68E-7D7B-4EB9-A5BB-80250390546C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D04CF778-C70B-41C2-907E-C652A180D303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D04CF778-C70B-41C2-907E-C652A180D303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D04CF778-C70B-41C2-907E-C652A180D303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D04CF778-C70B-41C2-907E-C652A180D303}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
