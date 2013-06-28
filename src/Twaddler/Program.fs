@@ -8,18 +8,24 @@ let buttons = [
         Icons.Play |> Icon.makeWhite
         span |> addRaw "Play"
     ]
+    |> Button.makeLarge
+    |> Button.makeBlock
 
     Button.info
     |> addKids [
         Icons.InfoSign |> Icon.makeWhite
         span |> addRaw "High Scores"
     ]
+    |> Button.makeLarge
+    |> Button.makeBlock
 
     Button.danger
     |> addKids [
         Icons.Eject |> Icon.makeWhite
         span |> addRaw "Exit"
     ]
+    |> Button.makeLarge
+    |> Button.makeBlock
 ]
 
 let twaddlerIndex =
