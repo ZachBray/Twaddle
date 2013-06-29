@@ -19,6 +19,11 @@ module Document =
                         "rel" <== "stylesheet" 
                         "media" <== "screen"
                     ]
+                    yield link |> addAttrs [
+                        "href" <== "css/bootstrap-responsive.min.css" 
+                        "rel" <== "stylesheet" 
+                        "media" <== "screen"
+                    ]
                     yield! head
                 ]
             Body =
@@ -33,8 +38,20 @@ module Document =
                 ]
         }
 
+module Container =
+    let row = div |> addClass "row"
+    let span n = div |> addClass (sprintf "span%i" n)
+    let offsetSpan i n = span n |> addClass (sprintf "offset%i" i)
+
+    let hero = div |> addClass "hero-unit"
+
+module Text =
+    let left p = p |> addClass "text-left" 
+    let center p = p |> addClass "text-center" 
+    let right p = p |> addClass "text-right" 
+
 module Button =
-    let normal = button |> addClass "btn"
+    let normal = a |> addClass "btn"
     let primary = normal |> addClass "btn-primary"
     let info = normal |> addClass "btn-info"
     let success = normal |> addClass "btn-success"

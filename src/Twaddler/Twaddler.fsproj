@@ -60,6 +60,9 @@
     <Compile Include="DOM.fs" />
     <Compile Include="Bootstrap.fs" />
     <Compile Include="Bootstrap.Icons.fs" />
+    <Compile Include="Scripting.fs" />
+    <Compile Include="Page.Game.fs" />
+    <Compile Include="Page.Index.fs" />
     <Compile Include="Program.fs" />
     <None Include="App.config" />
   </ItemGroup>

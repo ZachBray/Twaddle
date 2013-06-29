@@ -29,6 +29,9 @@ module Html =
     let title name = { tag "title" with Content = Raw name }
     let link = { tag "link" with Content = CannotHaveContent }
     let meta = { tag "meta" with Content = CannotHaveContent }
+    let p = tag "p"
+    let h n = tag (sprintf "h%i" n)
+    let br = { tag "br" with Content = CannotHaveContent }
     let i = tag "i"
 
 let addKids children (parent : Tag) =
@@ -51,6 +54,9 @@ let addClass value (parent : Tag) =
 
 let addAttr name value (parent : Tag) =
     { parent with Attributes = parent.Attributes |> Map.add name value }
+
+let addId value parent =
+    parent |> addAttr "id" value
 
 let addAttrs nameValues parent =
     nameValues |> List.fold (fun acc (name, value) ->

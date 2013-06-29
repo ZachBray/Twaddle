@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <title>Twaddler</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="css/bootstrap.min.css" media="screen" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" media="screen" rel="stylesheet">
+  </header>
+  <body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <div class="row">
+      <div class="span8 offset2">
+        <div class="hero-unit">
+          <h1>Pick-a-word</h1>
+          <p id="def-id">Definition of some word goes here</p>
+          <p>
+            <a class="btn btn-primary btn-block" href="game.html" id="word1-id">Word1</a>
+            <a class="btn btn-primary btn-block" href="game.html" id="word2-id">Word2</a>
+            <a class="btn btn-primary btn-block" href="game.html" id="word3-id">Word3</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="js/dictionary.js"></script>
+    <script language="JavaScript">$(document).ready(function () {
+var Scripting$$M_setText$__, Script$$M_randomInt$__, Script$$M_main$__, Script$$M_get_word3Id$__, Script$$M_get_word2Id$__, Script$$M_get_word1Id$__, Script$$M_get_definitionId$__, Script$$M_getWords$__, Script$$M_getDefinitions$__, Array$$M_BoxedLength$__;
+  Array$$M_BoxedLength$__ = (function (xs)
+  {
+    return xs.length;
+  });
+  Script$$M_getDefinitions$__ = (function (unitVar0)
+  {
+    return definitions;
+  });
+  Script$$M_getWords$__ = (function (unitVar0)
+  {
+    return words;
+  });
+  Script$$M_get_definitionId$__ = (function ()
+  {
+    return "def-id";
+  });
+  Script$$M_get_word1Id$__ = (function ()
+  {
+    return "word1-id";
+  });
+  Script$$M_get_word2Id$__ = (function ()
+  {
+    return "word2-id";
+  });
+  Script$$M_get_word3Id$__ = (function ()
+  {
+    return "word3-id";
+  });
+  Script$$M_main$__ = (function (unitVar0)
+  {
+    var words = Script$$M_getWords$__();
+    var definitions = Script$$M_getDefinitions$__();
+    var i = Script$$M_randomInt$__(Array$$M_BoxedLength$__(words));
+    var _temp1;
+    var value = definitions[i];
+    _temp1 = (function (tagId)
+    {
+      return Scripting$$M_setText$__(value, tagId);
+    });
+    _temp1(Script$$M_get_definitionId$__());
+    var _temp2;
+    var _value = words[i];
+    _temp2 = (function (tagId)
+    {
+      return Scripting$$M_setText$__(_value, tagId);
+    });
+    _temp2(Script$$M_get_word1Id$__());
+    var j = ((Script$$M_randomInt$__(10.000000) + i) % Array$$M_BoxedLength$__(words));
+    var _temp3;
+    if ((i == j)) 
+    {
+      _temp3 = (j + 1.000000);
+    }
+    else
+    {
+      _temp3 = j;
+    };
+    var k = _temp3;
+    var _temp4;
+    var __value = words[j];
+    _temp4 = (function (tagId)
+    {
+      return Scripting$$M_setText$__(__value, tagId);
+    });
+    _temp4(Script$$M_get_word2Id$__());
+    var _k = ((Script$$M_randomInt$__(10.000000) + i) % Array$$M_BoxedLength$__(words));
+    var _temp5;
+    if ((j == _k)) 
+    {
+      _temp5 = (_k + 1.000000);
+    }
+    else
+    {
+      _temp5 = _k;
+    };
+    var __k = _temp5;
+    var _temp6;
+    var ___value = words[__k];
+    _temp6 = (function (tagId)
+    {
+      return Scripting$$M_setText$__(___value, tagId);
+    });
+    return _temp6(Script$$M_get_word3Id$__());
+  });
+  Script$$M_randomInt$__ = (function (exclusiveUpper)
+  {
+    return (function (value)
+    {
+      return value;
+    })(Math.floor((Math.random() * exclusiveUpper)));
+  });
+  Scripting$$M_setText$__ = (function (value, tagId)
+  {
+    return (function (_value)
+    {
+      var ignored0 = _value;
+    })($(("#" + tagId)).text(value));
+  });
+  Script$$M_main$__()
+});</script>
+  </body>
+</html>

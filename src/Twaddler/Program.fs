@@ -1,35 +1,20 @@
 ﻿open DOM
-open Html
-open Bootstrap
+open Twaddler
+open System.IO
+open System.Diagnostics
 
-let buttons = [
-    Button.success 
-    |> addKids [
-        Icons.Play |> Icon.makeWhite
-        span |> addRaw "Play"
-    ]
-    |> Button.makeLarge
-    |> Button.makeBlock
-
-    Button.info
-    |> addKids [
-        Icons.InfoSign |> Icon.makeWhite
-        span |> addRaw "High Scores"
-    ]
-    |> Button.makeLarge
-    |> Button.makeBlock
-
-    Button.danger
-    |> addKids [
-        Icons.Eject |> Icon.makeWhite
-        span |> addRaw "Exit"
-    ]
-    |> Button.makeLarge
-    |> Button.makeBlock
+let twaddlerIndex = Bootstrap.Document.create "index.html" "Twaddler" [] (Page.Index.create())
+let pages = [
+    twaddlerIndex
+    Bootstrap.Document.create "game.html" "Twaddler" [] (Page.Game.create())
 ]
-
-let twaddlerIndex =
-    Bootstrap.Document.create "index.html" "Twaddler" [] buttons
-
+let dictionary = __SOURCE_DIRECTORY__ + @"\..\..\data\dictionaries\english.js"
 let root = __SOURCE_DIRECTORY__ + @"\..\..\www"
-Compiler.compile root twaddlerIndex
+let destination = Path.Combine(root, "js\dictionary.js")
+if File.Exists destination then
+    File.Delete destination
+File.Copy(dictionary, destination)
+for page in pages do 
+    Compiler.compile root page
+let index = Path.Combine(root, twaddlerIndex.Path)
+Process.Start index |> ignore

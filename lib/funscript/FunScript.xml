@@ -155,10 +155,28 @@
 <member name="">
 
 </member>
-<member name="T:FunScript.AST">
+<member name="">
 
 </member>
 <member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FunScript.AST">
 
 </member>
 <member name="">
@@ -290,9 +308,6 @@
 <member name="">
 
 </member>
-<member name="">
-
-</member>
 <member name="T:FunScript.CommonOperators.Replacements">
 
 </member>
@@ -314,13 +329,37 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="T:FunScript.Comparison.Replacements">
 
 </member>
 <member name="T:FunScript.Comparison">
-
-</member>
-<member name="">
 
 </member>
 <member name="">
@@ -2411,7 +2450,133 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FunScript.Core.Type">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="T:FunScript.Expr">
+
+</member>
+<member name="">
 
 </member>
 <member name="">
@@ -2579,7 +2744,43 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="T:FunScript.InternalCompiler">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
 
 </member>
 <member name="">
@@ -2643,18 +2844,6 @@
 
 </member>
 <member name="T:FunScript.Maps">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
 
 </member>
 <member name="">
@@ -2768,10 +2957,13 @@
 <member name="">
 
 </member>
-<member name="T:FunScript.RecordTypes">
+<member name="">
 
 </member>
 <member name="">
+
+</member>
+<member name="T:FunScript.RecordTypes">
 
 </member>
 <member name="">
@@ -2849,6 +3041,47 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FunScript.Reflection.isPrimitive(System.Type)">
+<summary>
+ For generic specialization. 
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FunScript.Reflection">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="T:FunScript.ReturnStrategies">
 
 </member>
@@ -2882,7 +3115,28 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="T:FunScript.Tuples">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
 
 </member>
 <member name="">
