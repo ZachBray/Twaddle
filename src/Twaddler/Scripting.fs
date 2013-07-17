@@ -10,4 +10,10 @@ type JS = Api< """
 """ >
 
 let setText (value : string) tagId = 
-    JS.``$``.Invoke("#" + tagId).text(value) |> ignore
+    JS.``$``.Invoke("#" + (tagId())).text(value) |> ignore
+
+let setHtml (value : string) tagId = 
+    JS.``$``.Invoke("#" + (tagId())).html(value) |> ignore
+
+let onClick f tagId =
+    JS.``$``.Invoke("#" + (tagId())).click(fun _ -> f(); ()) |> ignore

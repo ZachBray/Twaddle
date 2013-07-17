@@ -5,23 +5,3674 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="css/bootstrap.min.css" media="screen" rel="stylesheet">
     <link href="css/bootstrap-responsive.min.css" media="screen" rel="stylesheet">
+    <script src="js/dictionary.js">
+    </script>
   </header>
   <body>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <div class="span8 offset4">
-      <a class="btn btn-success btn-large btn-block" href="game.html">
-        <i class="icon-play icon-white"></i>
-        <span>Play</span>
-      </a>
-      <a class="btn btn-info btn-large btn-block" href="highscores.html">
-        <i class="icon-info-sign icon-white"></i>
-        <span>High Scores</span>
-      </a>
-      <a class="btn btn-danger btn-large btn-block">
-        <i class="icon-eject icon-white"></i>
-        <span>Exit</span>
-      </a>
+    <script src="js/jquery.min.js">
+    </script>
+    <script src="js/bootstrap.min.js">
+    </script>
+    <div id="root-id">
     </div>
+    <script language="JavaScript">$(document).ready(function () {
+var mkIEnumerator__2_String__String___ctor$String_String, list_1_MapTree_2_String__String__NilMapTree_2_String__String_, list_1_MapTree_2_String__String__ConsMapTree_2_String__String_, UnfoldEnumerator_2_Tuple_2_IEnumerator_1_String__IEnumerator_1_String__String___ctor$Tuple_2_IEnumerator_1_String__IEnumerator_1_String__String, UnfoldEnumerator_2_Int32__Tag___ctor$Int32_Tag_, UnfoldEnumerator_2_IEnumerator_1_Tuple_2_String__String__String___ctor$IEnumerator_1_Tuple_2_String__String__String, UnfoldEnumerator_2_IEnumerator_1_Tag__IEnumerable_1_String___ctor$IEnumerator_1_Tag__IEnumerable_1_String_, UnfoldEnumerator_2_IEnumerator_1_String__String___ctor$IEnumerator_1_String__String, UnfoldEnumerator_2_IEnumerator_1_KeyValuePair_2_String__String__Tuple_2_String__String___ctor$IEnumerator_1_KeyValuePair_2_String__String__Tuple_2_String__String_, UnfoldEnumerator_2_FSharpOption_1_String__String___ctor$FSharpOption_1_String__String, UnfoldEnumerator_2_Boolean__String___ctor$Boolean_String, TupleTuple_2_String__String__IEnumerator_1_KeyValuePair_2_String__String_, TupleTag__Int32, TupleString_Tuple_2_IEnumerator_1_String__IEnumerator_1_String_, TupleString_String, TupleString_IEnumerator_1_Tuple_2_String__String_, TupleString_IEnumerator_1_String_, TupleString_FSharpOption_1_String_, TupleMapTree_2_String__String__MapTree_2_String__String_, TupleIEnumerator_1_String__IEnumerator_1_String_, TupleIEnumerable_1_String__IEnumerator_1_Tag_, TupleFSharpFunc_2_AppState__Unit__FSharpFunc_2_String__Unit__FSharpFunc_2_String__Unit_, Tag___ctor$, String_1_Join$, Seq__Unfold$Tuple_2_IEnumerator_1_String__IEnumerator_1_String__String_Tuple_2_IEnumerator_1_String__IEnumerator_1_String__String, Seq__Unfold$Int32__Tag_Int32_Tag_, Seq__Unfold$IEnumerator_1_Tuple_2_String__String__String_IEnumerator_1_Tuple_2_String__String__String, Seq__Unfold$IEnumerator_1_Tag__IEnumerable_1_String_IEnumerator_1_Tag__IEnumerable_1_String_, Seq__Unfold$IEnumerator_1_String__String_IEnumerator_1_String__String, Seq__Unfold$IEnumerator_1_KeyValuePair_2_String__String__Tuple_2_String__String_IEnumerator_1_KeyValuePair_2_String__String__Tuple_2_String__String_, Seq__Unfold$FSharpOption_1_String__String_FSharpOption_1_String__String, Seq__Unfold$Boolean__String_Boolean_String, Seq__ToArray$String_String, Seq__Singleton$String_String, Seq__OfArray$Tag_Tag_, Seq__Map$Tuple_2_String__String__String_Tuple_2_String__String__String, Seq__Map$Tag__IEnumerable_1_String_Tag__IEnumerable_1_String_, Seq__Map$String__String_String_String, Seq__Map$KeyValuePair_2_String__String__Tuple_2_String__String_KeyValuePair_2_String__String__Tuple_2_String__String_, Seq__IterateIndexed$String_String, Seq__FromFactory$Tuple_2_String__String_Tuple_2_String__String_, Seq__FromFactory$Tag_Tag_, Seq__FromFactory$String_String, Seq__FromFactory$IEnumerable_1_String_IEnumerable_1_String_, Seq__FoldIndexedAux$Unit__String_Unit__String, Seq__FoldIndexedAux$IEnumerable_1_String__IEnumerable_1_String_IEnumerable_1_String__IEnumerable_1_String_, Seq__FoldIndexed$String__Unit_String_Unit_, Seq__FoldIndexed$IEnumerable_1_String__IEnumerable_1_String_IEnumerable_1_String__IEnumerable_1_String_, Seq__Fold$IEnumerable_1_String__IEnumerable_1_String_IEnumerable_1_String__IEnumerable_1_String_, Seq__Enumerator$Tuple_2_String__String_Tuple_2_String__String_, Seq__Enumerator$Tag_Tag_, Seq__Enumerator$String_String, Seq__Enumerator$KeyValuePair_2_String__String_KeyValuePair_2_String__String_, Seq__Enumerator$IEnumerable_1_String_IEnumerable_1_String_, Seq__Empty$String_String, Seq__Delay$Tuple_2_String__String_Tuple_2_String__String_, Seq__Delay$String_String, Seq__Delay$IEnumerable_1_String_IEnumerable_1_String_, Seq__Concat$IEnumerable_1_String__String_IEnumerable_1_String__String, Seq__Collect$Tag__IEnumerable_1_String__String_Tag__IEnumerable_1_String__String, Seq__Append$String_String, Scripting__setText$, Scripting__setHtml$, Scripting__onClick$, Option__IsSome$Tuple_2_IEnumerator_1_String__IEnumerator_1_String_Tuple_2_IEnumerator_1_String__IEnumerator_1_String_, Option__IsSome$Int32_Int32, Option__IsSome$IEnumerator_1_Tuple_2_String__String_IEnumerator_1_Tuple_2_String__String_, Option__IsSome$IEnumerator_1_Tag_IEnumerator_1_Tag_, Option__IsSome$IEnumerator_1_String_IEnumerator_1_String_, Option__IsSome$IEnumerator_1_KeyValuePair_2_String__String_IEnumerator_1_KeyValuePair_2_String__String_, Option__IsSome$FSharpOption_1_String_FSharpOption_1_String_, Option__IsSome$Boolean_Boolean, Map__ToSeq$String__String_String_String, Map__Empty$String__String_String_String, Map__Add$String__String_String_String, MapTree_2_String__String__MapOneString_String, MapTree_2_String__String__MapNodeString_String, MapTree_2_String__String__MapEmptyString_String, MapTreeModule__tryFind$IComparable__Object_IComparable__Object_, MapTreeModule__rebalance$String__String_String_String, MapTreeModule__notStarted$KeyValuePair_2_String__String_KeyValuePair_2_String__String_, MapTreeModule__moveNext$String__String_String_String, MapTreeModule__mkIterator$String__String_String_String, MapTreeModule__mkIEnumerator$String__String_String_String, MapTreeModule__mk$String__String_String_String, MapTreeModule__height$String__String_String_String, MapTreeModule__current$String__String_String_String, MapTreeModule__collapseLHS$String__String_String_String, MapTreeModule__alreadyFinished$KeyValuePair_2_String__String_KeyValuePair_2_String__String_, MapTreeModule__add$String__String_String_String, MapIterator_2_String__String___ctor$String_String, List__Tail$MapTree_2_String__String_MapTree_2_String__String_, List__IsEmpty$MapTree_2_String__String_MapTree_2_String__String_, List__Head$MapTree_2_String__String_MapTree_2_String__String_, List__Empty$MapTree_2_String__String_MapTree_2_String__String_, List__CreateCons$MapTree_2_String__String_MapTree_2_String__String_, KeyValuePair_2_String__String__get_Value$String_String, KeyValuePair_2_String__String__get_Key$String_String, KeyValuePair_2_String__String___ctor$String_String, Index__playId$, Index__next$, Index__createPage$, Icons__get_Play$, Icons__get_InfoSign$, Icons__get_Eject$, Icons__Play, Icons__InfoSign, Icons__Eject, Icon__makeWhite$, Html__tag$, Html__span, Html__p, Html__i, Html__h$Int32_Int32, Html__get_span$, Html__get_p$, Html__get_i$, Html__get_div$, Html__get_a$, Html__div, Html__a, GenericComparer_1_String___ctor$String, Game__word3Id$, Game__word2Id$, Game__word1Id$, Game__randomInt$, Game__next$, Game__getWords$, Game__getDefinitions$, Game__definitionId$, Game__createPage$, FSharpString__Concat$, FSharpMap_2_String__String__get_Empty$String_String, FSharpMap_2_String__String___ctor$String_String, FSharpMap_2_String__String__Add$String_String, FSharpMap_2_IComparable__Object__TryFind$IComparable__Object_, DOM__op_LessEqualsEquals$String__String_String_String, DOM__addRaw$, DOM__addKids$, DOM__addId$, DOM__addClass$, DOM__addAttrs$, DOM__addAttr$, CreateEnumerable_1_Tuple_2_String__String___ctor$Tuple_2_String__String_, CreateEnumerable_1_Tag___ctor$Tag_, CreateEnumerable_1_String___ctor$String, CreateEnumerable_1_IEnumerable_1_String___ctor$IEnumerable_1_String_, Content__Raw, Content__Children, Container__span$Int32_Int32, Container__row, Container__offsetSpan$Int32__Int32_Int32_Int32, Container__get_row$, Compiler__openTag$, Compiler__indent$, Compiler__compileTag$, Compiler__compileAttributes$, Compiler__closingTag$, CancellationToken___ctor$, CancellationToken__ThrowIfCancellationRequested$, Button__success, Button__primary, Button__normal, Button__makeLarge$, Button__makeBlock$, Button__info, Button__get_success$, Button__get_primary$, Button__get_normal$, Button__get_info$, Button__get_danger$, Button__danger, Async__StartImmediate$, Async__FromContinuations$AppState_AppState_, Async_1_setTimeout$Unit_Unit_, Async_1_protectedCont$Unit_Unit_, Async_1_protectedCont$AppState_AppState_, Async_1_get_async$, Async_1_Unit__ContUnit_, Async_1_AppState__ContAppState_, AsyncParams_1_Unit___ctor$Unit_, AsyncParams_1_AppState___ctor$AppState_, AsyncParamsAux___ctor$, AsyncBuilder___ctor$, AsyncBuilder__ReturnFrom$Unit_Unit_, AsyncBuilder__Delay$Unit_Unit_, AsyncBuilder__Bind$AppState__Unit_AppState__Unit_, Array__ZeroCreate$String_String, Array__Length$Tuple_2_String__String_Tuple_2_String__String_, Array__FoldIndexed$Tag__Tuple_2_String__String_Tag__Tuple_2_String__String_, Array__Fold$Tuple_2_String__String__Tag_Tuple_2_String__String__Tag_, Array__BoxedLength$, Array__Append$Tag_Tag_, Application__rootId$, Application__renderLoop$, Application__render$, Application__main$, AppState__AppState;
+  AppState__AppState = (function (Item1, Item2)
+  {
+    this.Tag = 0.000000;
+    this._CaseName = "AppState";
+    this.Item1 = Item1;
+    this.Item2 = Item2;
+  });
+  AppState__AppState.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = ((this.Tag < that.Tag) ? -1.000000 : ((this.Tag == that.Tag) ? 0.000000 : 1.000000));
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      var i = 0.000000;
+      while (((__diff == 0.000000) && ((i < this.Item1.length) && (i < that.Item1.length))))
+      {
+        __diff = this.Item1[i].CompareTo(that.Item1[i]);
+        i = (i + 1.000000);
+      };
+      __diff = ((__diff == 0.000000) ? (this.Item1.length - that.Item1.length) : __diff);
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        var ___diff = 0.000000;
+        ___diff = this.Item2.CompareTo(that.Item2);
+        diff = ___diff;
+        if ((diff != 0.000000)) 
+        {
+          return diff;
+        }
+        else
+        {
+          return 0.000000;
+        };
+      };
+    };
+  });
+  Application__main$ = (function (unitVar0)
+  {
+    return Application__render$(Index__next$());
+  });
+  Application__render$ = (function (state)
+  {
+    return (function (arg00)
+    {
+      return Async__StartImmediate$(arg00, {Tag: 0.000000});
+    })(Application__renderLoop$(state));
+  });
+  Application__renderLoop$ = (function (_arg1)
+  {
+    var page = _arg1.Item1;
+    var next = _arg1.Item2;
+    return (function (builder_)
+    {
+      return AsyncBuilder__Delay$Unit_Unit_(builder_, (function (unitVar)
+      {
+        var allTags = (function (source)
+        {
+          return Seq__Collect$Tag__IEnumerable_1_String__String_Tag__IEnumerable_1_String__String((function (tag)
+          {
+            return Compiler__compileTag$(tag);
+          }), Seq__OfArray$Tag_Tag_(source));
+        })(page);
+        var _temp57930;
+        var _temp57931;
+        var sep = "";
+        _temp57931 = (function (strings)
+        {
+          return FSharpString__Concat$(sep, strings);
+        });
+        _temp57930 = _temp57931(allTags);
+        var html = _temp57930;
+        (function (tagId)
+        {
+          return Scripting__setHtml$(html, tagId);
+        })((function (arg00_)
+        {
+          return Application__rootId$();
+        }));
+        var _temp57966;
+        var _temp57968;
+        var _temp57969;
+        _temp57968 = next(_temp57969);
+        _temp57966 = _temp57968;
+        return AsyncBuilder__Bind$AppState__Unit_AppState__Unit_(builder_, _temp57966, (function (_arg2)
+        {
+          var nextState = _arg2;
+          return AsyncBuilder__ReturnFrom$Unit_Unit_(builder_, Application__renderLoop$(nextState));
+        }));
+      }));
+    })(Async_1_get_async$());
+  });
+  Application__rootId$ = (function (unitVar0)
+  {
+    return "root-id";
+  });
+  Array__Append$Tag_Tag_ = (function (xs, ys)
+  {
+    return xs.concat(ys);
+  });
+  Array__BoxedLength$ = (function (xs)
+  {
+    return xs.length;
+  });
+  Array__Fold$Tuple_2_String__String__Tag_Tuple_2_String__String__Tag_ = (function (f, seed, xs)
+  {
+    return Array__FoldIndexed$Tag__Tuple_2_String__String_Tag__Tuple_2_String__String_((function (_arg1)
+    {
+      return (function (acc)
+      {
+        return (function (x)
+        {
+          return f(acc)(x);
+        });
+      });
+    }), seed, xs);
+  });
+  Array__FoldIndexed$Tag__Tuple_2_String__String_Tag__Tuple_2_String__String_ = (function (f, seed, xs)
+  {
+    var acc = seed;
+    for (var i = 0.000000; i <= (Array__Length$Tuple_2_String__String_Tuple_2_String__String_(xs) - 1.000000); i++)
+    {
+      acc = f(i)(acc)(xs[i]);
+      null;
+    };
+    return acc;
+  });
+  Array__Length$Tuple_2_String__String_Tuple_2_String__String_ = (function (xs)
+  {
+    return xs.length;
+  });
+  Array__ZeroCreate$String_String = (function (size)
+  {
+    return new Array(size);
+  });
+  AsyncBuilder__Bind$AppState__Unit_AppState__Unit_ = (function (x, _arg1, f)
+  {
+    var v = _arg1.Item;
+    return (function (_f)
+    {
+      return Async_1_protectedCont$Unit_Unit_(_f);
+    })((function (k)
+    {
+      var cont = (function (a)
+      {
+        var patternInput = f(a);
+        var r = patternInput.Item;
+        return r(k);
+      });
+      return v((new AsyncParams_1_AppState___ctor$AppState_(cont, k.Aux)));
+    }));
+  });
+  AsyncBuilder__Delay$Unit_Unit_ = (function (x, f)
+  {
+    return (function (_f)
+    {
+      return Async_1_protectedCont$Unit_Unit_(_f);
+    })((function (k)
+    {
+      var _temp57971;
+      var _temp57972;
+      _temp57971 = f(_temp57972);
+      var patternInput = _temp57971;
+      var r = patternInput.Item;
+      return r(k);
+    }));
+  });
+  AsyncBuilder__ReturnFrom$Unit_Unit_ = (function (x, w)
+  {
+    return w;
+  });
+  AsyncBuilder___ctor$ = (function (unitVar0)
+  {
+    ;
+  });
+  AsyncParamsAux___ctor$ = (function (StackCounter, ExceptionCont, CancelledCont, CancellationToken)
+  {
+    this.StackCounter = StackCounter;
+    this.ExceptionCont = ExceptionCont;
+    this.CancelledCont = CancelledCont;
+    this.CancellationToken = CancellationToken;
+  });
+  AsyncParamsAux___ctor$.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = this.StackCounter.CompareTo(that.StackCounter);
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      __diff = this.ExceptionCont.CompareTo(that.ExceptionCont);
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        var ___diff = 0.000000;
+        ___diff = this.CancelledCont.CompareTo(that.CancelledCont);
+        diff = ___diff;
+        if ((diff != 0.000000)) 
+        {
+          return diff;
+        }
+        else
+        {
+          var ____diff = 0.000000;
+          ____diff = this.CancellationToken.CompareTo(that.CancellationToken);
+          diff = ____diff;
+          if ((diff != 0.000000)) 
+          {
+            return diff;
+          }
+          else
+          {
+            return 0.000000;
+          };
+        };
+      };
+    };
+  });
+  AsyncParams_1_AppState___ctor$AppState_ = (function (Cont, Aux)
+  {
+    this.Cont = Cont;
+    this.Aux = Aux;
+  });
+  AsyncParams_1_AppState___ctor$AppState_.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = this.Cont.CompareTo(that.Cont);
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      __diff = this.Aux.CompareTo(that.Aux);
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        return 0.000000;
+      };
+    };
+  });
+  AsyncParams_1_Unit___ctor$Unit_ = (function (Cont, Aux)
+  {
+    this.Cont = Cont;
+    this.Aux = Aux;
+  });
+  AsyncParams_1_Unit___ctor$Unit_.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = this.Cont.CompareTo(that.Cont);
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      __diff = this.Aux.CompareTo(that.Aux);
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        return 0.000000;
+      };
+    };
+  });
+  Async_1_AppState__ContAppState_ = (function (Item)
+  {
+    this.Tag = 0.000000;
+    this._CaseName = "Cont";
+    this.Item = Item;
+  });
+  Async_1_AppState__ContAppState_.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = ((this.Tag < that.Tag) ? -1.000000 : ((this.Tag == that.Tag) ? 0.000000 : 1.000000));
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      __diff = this.Item.CompareTo(that.Item);
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        return 0.000000;
+      };
+    };
+  });
+  Async_1_Unit__ContUnit_ = (function (Item)
+  {
+    this.Tag = 0.000000;
+    this._CaseName = "Cont";
+    this.Item = Item;
+  });
+  Async_1_Unit__ContUnit_.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = ((this.Tag < that.Tag) ? -1.000000 : ((this.Tag == that.Tag) ? 0.000000 : 1.000000));
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      __diff = this.Item.CompareTo(that.Item);
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        return 0.000000;
+      };
+    };
+  });
+  Async_1_get_async$ = (function ()
+  {
+    return (new AsyncBuilder___ctor$());
+  });
+  Async_1_protectedCont$AppState_AppState_ = (function (f)
+  {
+    return (new Async_1_AppState__ContAppState_((function (args)
+    {
+      CancellationToken__ThrowIfCancellationRequested$(args.Aux.CancellationToken);
+      args.Aux.StackCounter.contents = (args.Aux.StackCounter.contents + 1.000000);
+      null;
+      if ((args.Aux.StackCounter.contents > 1000.000000)) 
+      {
+        args.Aux.StackCounter.contents = 0.000000;
+        null;
+        return Async_1_setTimeout$Unit_Unit_((function (unitVar0)
+        {
+          return f(args);
+        }), 1.000000);
+      }
+      else
+      {
+        return f(args);
+      };
+    })));
+  });
+  Async_1_protectedCont$Unit_Unit_ = (function (f)
+  {
+    return (new Async_1_Unit__ContUnit_((function (args)
+    {
+      CancellationToken__ThrowIfCancellationRequested$(args.Aux.CancellationToken);
+      args.Aux.StackCounter.contents = (args.Aux.StackCounter.contents + 1.000000);
+      null;
+      if ((args.Aux.StackCounter.contents > 1000.000000)) 
+      {
+        args.Aux.StackCounter.contents = 0.000000;
+        null;
+        return Async_1_setTimeout$Unit_Unit_((function (unitVar0)
+        {
+          return f(args);
+        }), 1.000000);
+      }
+      else
+      {
+        return f(args);
+      };
+    })));
+  });
+  Async_1_setTimeout$Unit_Unit_ = (function (handler, milliseconds)
+  {
+    return setTimeout(handler, milliseconds);
+  });
+  Async__FromContinuations$AppState_AppState_ = (function (f)
+  {
+    return (function (_f)
+    {
+      return Async_1_protectedCont$AppState_AppState_(_f);
+    })((function (k)
+    {
+      return f((new TupleFSharpFunc_2_AppState__Unit__FSharpFunc_2_String__Unit__FSharpFunc_2_String__Unit_(k.Cont, k.Aux.ExceptionCont, k.Aux.CancelledCont)));
+    }));
+  });
+  Async__StartImmediate$ = (function (workflow, cancellationToken)
+  {
+    var _temp57863;
+    if ((cancellationToken.Tag == 1.000000)) 
+    {
+      var v = cancellationToken.Value;
+      _temp57863 = v;
+    }
+    else
+    {
+      _temp57863 = (new CancellationToken___ctor$({Tag: 0.000000}));
+    };
+    var token = _temp57863;
+    var f = workflow.Item;
+    var aux = (new AsyncParamsAux___ctor$({contents: 0.000000}, (function (value)
+    {
+      var ignored0 = value;
+    }), (function (value)
+    {
+      var ignored0 = value;
+    }), token));
+    return f((new AsyncParams_1_Unit___ctor$Unit_((function (value)
+    {
+      var ignored0 = value;
+    }), aux)));
+  });
+  Button__get_danger$ = (function ()
+  {
+    var _temp341;
+    var value = "btn-danger";
+    _temp341 = (function (parent)
+    {
+      return DOM__addClass$(value, parent);
+    });
+    return _temp341(Button__normal);
+  });
+  Button__get_info$ = (function ()
+  {
+    var _temp212;
+    var value = "btn-info";
+    _temp212 = (function (parent)
+    {
+      return DOM__addClass$(value, parent);
+    });
+    return _temp212(Button__normal);
+  });
+  Button__get_normal$ = (function ()
+  {
+    var _temp83;
+    var value = "btn";
+    _temp83 = (function (parent)
+    {
+      return DOM__addClass$(value, parent);
+    });
+    return _temp83(Html__a);
+  });
+  Button__get_primary$ = (function ()
+  {
+    var _temp3141;
+    var value = "btn-primary";
+    _temp3141 = (function (parent)
+    {
+      return DOM__addClass$(value, parent);
+    });
+    return _temp3141(Button__normal);
+  });
+  Button__get_success$ = (function ()
+  {
+    var _temp82;
+    var value = "btn-success";
+    _temp82 = (function (parent)
+    {
+      return DOM__addClass$(value, parent);
+    });
+    return _temp82(Button__normal);
+  });
+  Button__makeBlock$ = (function (btn)
+  {
+    var _temp8;
+    var value = "btn-block";
+    _temp8 = (function (parent)
+    {
+      return DOM__addClass$(value, parent);
+    });
+    return _temp8(btn);
+  });
+  Button__makeLarge$ = (function (btn)
+  {
+    var _temp9;
+    var value = "btn-large";
+    _temp9 = (function (parent)
+    {
+      return DOM__addClass$(value, parent);
+    });
+    return _temp9(btn);
+  });
+  CancellationToken__ThrowIfCancellationRequested$ = (function (x, unitVar1)
+  {
+    var matchValue = x.Cell;
+    if ((matchValue.Tag == 1.000000)) 
+    {
+      var _temp57861;
+      var cell = matchValue.Value;
+      _temp57861 = cell.contents;
+      if (_temp57861) 
+      {
+        var _cell = matchValue.Value;
+        throw ("OperationCancelledException");
+        return null;
+      }
+      else
+      {
+        ;
+      };
+    }
+    else
+    {
+      ;
+    };
+  });
+  CancellationToken___ctor$ = (function (Cell)
+  {
+    this.Cell = Cell;
+  });
+  CancellationToken___ctor$.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = this.Cell.CompareTo(that.Cell);
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      return 0.000000;
+    };
+  });
+  Compiler__closingTag$ = (function (tag)
+  {
+    return (("\u003c/" + tag.Name) + "\u003e");
+  });
+  Compiler__compileAttributes$ = (function (xs)
+  {
+    var _temp57866;
+    var sep = "";
+    _temp57866 = (function (strings)
+    {
+      return FSharpString__Concat$(sep, strings);
+    });
+    var _temp57875;
+    var _temp57876;
+    var mapping = (function (tupledArg)
+    {
+      var k = tupledArg.Items[0.000000];
+      var v = tupledArg.Items[1.000000];
+      return ((((" " + k) + "=\"") + v) + "\"");
+    });
+    _temp57876 = (function (source)
+    {
+      return Seq__Map$Tuple_2_String__String__String_Tuple_2_String__String__String(mapping, source);
+    });
+    _temp57875 = _temp57876(xs);
+    return _temp57866(_temp57875);
+  });
+  Compiler__compileTag$ = (function (tag)
+  {
+    return Seq__Delay$String_String((function (unitVar)
+    {
+      var matchValue = tag.Content;
+      if ((matchValue.Tag == 1.000000)) 
+      {
+        var str = matchValue.Item;
+        return Seq__Singleton$String_String(((Compiler__openTag$(tag) + str) + Compiler__closingTag$(tag)));
+      }
+      else
+      {
+        if ((matchValue.Tag == 0.000000)) 
+        {
+          var tags = matchValue.Item;
+          return Seq__Append$String_String(Seq__Singleton$String_String(Compiler__openTag$(tag)), Seq__Delay$String_String((function (_unitVar)
+          {
+            var _temp57921;
+            var _temp57925;
+            var _temp57927;
+            var _temp57928;
+            var mapping = (function (_tag)
+            {
+              return Compiler__compileTag$(_tag);
+            });
+            _temp57928 = (function (source)
+            {
+              return Seq__Collect$Tag__IEnumerable_1_String__String_Tag__IEnumerable_1_String__String(mapping, Seq__OfArray$Tag_Tag_(source));
+            });
+            _temp57927 = _temp57928(tags);
+            _temp57925 = (function (xs)
+            {
+              return Compiler__indent$(xs);
+            })(_temp57927);
+            _temp57921 = _temp57925;
+            return Seq__Append$String_String(_temp57921, Seq__Delay$String_String((function (__unitVar)
+            {
+              return Seq__Singleton$String_String(Compiler__closingTag$(tag));
+            })));
+          })));
+        }
+        else
+        {
+          return Seq__Singleton$String_String(Compiler__openTag$(tag));
+        };
+      };
+    }));
+  });
+  Compiler__indent$ = (function (xs)
+  {
+    var _temp57895;
+    var mapping = (function (x)
+    {
+      return ("  " + x);
+    });
+    _temp57895 = (function (source)
+    {
+      return Seq__Map$String__String_String_String(mapping, source);
+    });
+    return _temp57895(xs);
+  });
+  Compiler__openTag$ = (function (tag)
+  {
+    var attributes = (function (xs)
+    {
+      return Compiler__compileAttributes$(xs);
+    })((function (table)
+    {
+      return Map__ToSeq$String__String_String_String(table);
+    })(tag.Attributes));
+    return ((("\u003c" + tag.Name) + attributes) + "\u003e");
+  });
+  Container__get_row$ = (function ()
+  {
+    var _temp30461;
+    var value = "row";
+    _temp30461 = (function (parent)
+    {
+      return DOM__addClass$(value, parent);
+    });
+    return _temp30461(Html__div);
+  });
+  Container__offsetSpan$Int32__Int32_Int32_Int32 = (function (i, n)
+  {
+    var _temp1600;
+    var value = ("offset" + i.toString());
+    _temp1600 = (function (parent)
+    {
+      return DOM__addClass$(value, parent);
+    });
+    return _temp1600(Container__span$Int32_Int32(n));
+  });
+  Container__span$Int32_Int32 = (function (n)
+  {
+    var _temp1601;
+    var value = ("span" + n.toString());
+    _temp1601 = (function (parent)
+    {
+      return DOM__addClass$(value, parent);
+    });
+    return _temp1601(Html__div);
+  });
+  Content__Children = (function (Item)
+  {
+    this.Tag = 0.000000;
+    this._CaseName = "Children";
+    this.Item = Item;
+  });
+  Content__Children.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = ((this.Tag < that.Tag) ? -1.000000 : ((this.Tag == that.Tag) ? 0.000000 : 1.000000));
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      var i = 0.000000;
+      while (((__diff == 0.000000) && ((i < this.Item.length) && (i < that.Item.length))))
+      {
+        __diff = this.Item[i].CompareTo(that.Item[i]);
+        i = (i + 1.000000);
+      };
+      __diff = ((__diff == 0.000000) ? (this.Item.length - that.Item.length) : __diff);
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        return 0.000000;
+      };
+    };
+  });
+  Content__Raw = (function (Item)
+  {
+    this.Tag = 1.000000;
+    this._CaseName = "Raw";
+    this.Item = Item;
+  });
+  Content__Raw.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = ((this.Tag < that.Tag) ? -1.000000 : ((this.Tag == that.Tag) ? 0.000000 : 1.000000));
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      __diff = ((this.Item < that.Item) ? -1.000000 : ((this.Item == that.Item) ? 0.000000 : 1.000000));
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        return 0.000000;
+      };
+    };
+  });
+  CreateEnumerable_1_IEnumerable_1_String___ctor$IEnumerable_1_String_ = (function (factory)
+  {
+    this.factory = factory;
+  });
+  CreateEnumerable_1_String___ctor$String = (function (factory)
+  {
+    this.factory = factory;
+  });
+  CreateEnumerable_1_Tag___ctor$Tag_ = (function (factory)
+  {
+    this.factory = factory;
+  });
+  CreateEnumerable_1_Tuple_2_String__String___ctor$Tuple_2_String__String_ = (function (factory)
+  {
+    this.factory = factory;
+  });
+  DOM__addAttr$ = (function (name, value, parent)
+  {
+    var Attributes = (function (table)
+    {
+      return Map__Add$String__String_String_String(name, value, table);
+    })(parent.Attributes);
+    return (new Tag___ctor$(parent.Name, Attributes, parent.Content));
+  });
+  DOM__addAttrs$ = (function (nameValues, parent)
+  {
+    var _temp3138;
+    var folder = (function (acc)
+    {
+      return (function (tupledArg)
+      {
+        var name = tupledArg.Items[0.000000];
+        var value = tupledArg.Items[1.000000];
+        return (function (_parent)
+        {
+          return DOM__addAttr$(name, value, _parent);
+        })(acc);
+      });
+    });
+    _temp3138 = (function (array)
+    {
+      return Array__Fold$Tuple_2_String__String__Tag_Tuple_2_String__String__Tag_(folder, parent, array);
+    });
+    return _temp3138(nameValues);
+  });
+  DOM__addClass$ = (function (value, parent)
+  {
+    var _temp5;
+    var matchValue = FSharpMap_2_IComparable__Object__TryFind$IComparable__Object_(parent.Attributes, "class");
+    if ((matchValue.Tag == 1.000000)) 
+    {
+      var oldValue = matchValue.Value;
+      var _temp6;
+      var key = "class";
+      var _value = ((oldValue + " ") + value);
+      _temp6 = (function (table)
+      {
+        return Map__Add$String__String_String_String(key, _value, table);
+      });
+      _temp5 = _temp6(parent.Attributes);
+    }
+    else
+    {
+      var _temp7;
+      var _key = "class";
+      _temp7 = (function (table)
+      {
+        return Map__Add$String__String_String_String(_key, value, table);
+      });
+      _temp5 = _temp7(parent.Attributes);
+    };
+    var Attributes = _temp5;
+    return (new Tag___ctor$(parent.Name, Attributes, parent.Content));
+  });
+  DOM__addId$ = (function (f, parent)
+  {
+    var _temp78;
+    var name = "id";
+    var _temp80;
+    var _temp81;
+    _temp80 = f(_temp81);
+    var value = _temp80;
+    _temp78 = (function (_parent)
+    {
+      return DOM__addAttr$(name, value, _parent);
+    });
+    return _temp78(parent);
+  });
+  DOM__addKids$ = (function (children, parent)
+  {
+    var matchValue = parent.Content;
+    if ((matchValue.Tag == 1.000000)) 
+    {
+      var str = matchValue.Item;
+      var _temp32;
+      var _temp40;
+      var _temp44;
+      var _temp46;
+      var _temp47;
+      var Content = (new Content__Raw(str));
+      _temp47 = (new Tag___ctor$(Html__span.Name, Html__span.Attributes, Content));
+      _temp46 = [_temp47];
+      _temp44 = _temp46;
+      _temp40 = Array__Append$Tag_Tag_(_temp44, children);
+      _temp32 = (new Content__Children(_temp40));
+      var _Content = _temp32;
+      return (new Tag___ctor$(parent.Name, parent.Attributes, _Content));
+    }
+    else
+    {
+      if ((matchValue.Tag == 0.000000)) 
+      {
+        var xs = matchValue.Item;
+        var __Content = (new Content__Children(Array__Append$Tag_Tag_(children, xs)));
+        return (new Tag___ctor$(parent.Name, parent.Attributes, __Content));
+      }
+      else
+      {
+        var _temp48;
+        throw ("%s tags cannnot have content.");
+        _temp48 = null;
+        return _temp48(parent.Name);
+      };
+    };
+  });
+  DOM__addRaw$ = (function (str, parent)
+  {
+    var matchValue = parent.Content;
+    if ((matchValue.Tag == 0.000000)) 
+    {
+      var _temp13;
+      var xs = matchValue.Item;
+      _temp13 = (Array__BoxedLength$(xs) == 0.000000);
+      if (_temp13) 
+      {
+        var _xs = matchValue.Item;
+        var Content = (new Content__Raw(str));
+        return (new Tag___ctor$(parent.Name, parent.Attributes, Content));
+      }
+      else
+      {
+        var _temp49;
+        var _temp51;
+        var _temp52;
+        var _Content = (new Content__Raw(str));
+        _temp52 = (new Tag___ctor$(Html__span.Name, Html__span.Attributes, _Content));
+        _temp51 = [_temp52];
+        var children = _temp51;
+        _temp49 = (function (_parent)
+        {
+          return DOM__addKids$(children, _parent);
+        });
+        return _temp49(parent);
+      };
+    }
+    else
+    {
+      var _temp56;
+      var _temp58;
+      var _temp59;
+      var __Content = (new Content__Raw(str));
+      _temp59 = (new Tag___ctor$(Html__span.Name, Html__span.Attributes, __Content));
+      _temp58 = [_temp59];
+      var _children = _temp58;
+      _temp56 = (function (_parent)
+      {
+        return DOM__addKids$(_children, _parent);
+      });
+      return _temp56(parent);
+    };
+  });
+  DOM__op_LessEqualsEquals$String__String_String_String = (function (x, y)
+  {
+    return (new TupleString_String(x, y));
+  });
+  FSharpMap_2_IComparable__Object__TryFind$IComparable__Object_ = (function (m, k)
+  {
+    return MapTreeModule__tryFind$IComparable__Object_IComparable__Object_(m.comparer_386, k, m.tree_390);
+  });
+  FSharpMap_2_String__String__Add$String_String = (function (m, k, v)
+  {
+    return (new FSharpMap_2_String__String___ctor$String_String(m.comparer_386, MapTreeModule__add$String__String_String_String(m.comparer_386, k, v, m.tree_390)));
+  });
+  FSharpMap_2_String__String___ctor$String_String = (function (comparer, tree)
+  {
+    this.comparer_386 = comparer;
+    this.tree_390 = tree;
+  });
+  FSharpMap_2_String__String__get_Empty$String_String = (function (unitVar0)
+  {
+    var comparer = (new GenericComparer_1_String___ctor$String());
+    var _temp12;
+    var impl;
+    impl = comparer;
+    _temp12 = {Compare: (function (x, y)
+    {
+      return (function (__, x, y)
+      {
+        var diff = 0.000000;
+        diff = ((x < y) ? -1.000000 : ((x == y) ? 0.000000 : 1.000000));
+        return diff;
+      })(impl, x, y);
+    })};
+    return (new FSharpMap_2_String__String___ctor$String_String(_temp12, (new MapTree_2_String__String__MapEmptyString_String())));
+  });
+  FSharpString__Concat$ = (function (sep, strings)
+  {
+    return String_1_Join$(sep, Seq__ToArray$String_String(strings));
+  });
+  Game__createPage$ = (function (unitVar0)
+  {
+    var _temp30462;
+    var _temp44126;
+    var _temp50958;
+    var _temp54374;
+    var _temp56082;
+    var _temp56936;
+    var _temp56938;
+    var _temp56939;
+    var str = "Pick-a-word";
+    _temp56939 = (function (parent)
+    {
+      return DOM__addRaw$(str, parent);
+    });
+    _temp56938 = _temp56939(Html__h$Int32_Int32(3.000000));
+    var _temp56941;
+    var _temp56942;
+    var _str = "Definition of some word goes here";
+    _temp56942 = (function (parent)
+    {
+      return DOM__addRaw$(_str, parent);
+    });
+    _temp56941 = _temp56942((function (parent)
+    {
+      return DOM__addId$((function (arg00_)
+      {
+        return Game__definitionId$();
+      }), parent);
+    })(Html__p));
+    var _temp57366;
+    var _temp57578;
+    var _temp57684;
+    var _temp57702;
+    var _temp57711;
+    var _temp57712;
+    var nameValues = [DOM__op_LessEqualsEquals$String__String_String_String("href", "#")];
+    _temp57712 = (function (parent)
+    {
+      return DOM__addAttrs$(nameValues, parent);
+    });
+    var _temp57716;
+    var _temp57718;
+    var _temp57719;
+    var __str = "Word1";
+    _temp57719 = (function (parent)
+    {
+      return DOM__addRaw$(__str, parent);
+    });
+    _temp57718 = _temp57719(Button__primary);
+    _temp57716 = (function (parent)
+    {
+      return DOM__addId$((function (arg00_)
+      {
+        return Game__word1Id$();
+      }), parent);
+    })(_temp57718);
+    _temp57711 = _temp57712(_temp57716);
+    _temp57702 = (function (btn)
+    {
+      return Button__makeBlock$(btn);
+    })(_temp57711);
+    var _temp57737;
+    var _temp57746;
+    var _temp57747;
+    var _nameValues = [DOM__op_LessEqualsEquals$String__String_String_String("href", "#")];
+    _temp57747 = (function (parent)
+    {
+      return DOM__addAttrs$(_nameValues, parent);
+    });
+    var _temp57751;
+    var _temp57753;
+    var _temp57754;
+    var ___str = "Word2";
+    _temp57754 = (function (parent)
+    {
+      return DOM__addRaw$(___str, parent);
+    });
+    _temp57753 = _temp57754(Button__primary);
+    _temp57751 = (function (parent)
+    {
+      return DOM__addId$((function (arg00_)
+      {
+        return Game__word2Id$();
+      }), parent);
+    })(_temp57753);
+    _temp57746 = _temp57747(_temp57751);
+    _temp57737 = (function (btn)
+    {
+      return Button__makeBlock$(btn);
+    })(_temp57746);
+    var _temp57772;
+    var _temp57781;
+    var _temp57782;
+    var __nameValues = [DOM__op_LessEqualsEquals$String__String_String_String("href", "#")];
+    _temp57782 = (function (parent)
+    {
+      return DOM__addAttrs$(__nameValues, parent);
+    });
+    var _temp57786;
+    var _temp57788;
+    var _temp57789;
+    var ____str = "Word3";
+    _temp57789 = (function (parent)
+    {
+      return DOM__addRaw$(____str, parent);
+    });
+    _temp57788 = _temp57789(Button__primary);
+    _temp57786 = (function (parent)
+    {
+      return DOM__addId$((function (arg00_)
+      {
+        return Game__word3Id$();
+      }), parent);
+    })(_temp57788);
+    _temp57781 = _temp57782(_temp57786);
+    _temp57772 = (function (btn)
+    {
+      return Button__makeBlock$(btn);
+    })(_temp57781);
+    _temp57684 = [_temp57702, _temp57737, _temp57772];
+    var children = _temp57684;
+    _temp57578 = (function (parent)
+    {
+      return DOM__addKids$(children, parent);
+    });
+    _temp57366 = _temp57578(Html__p);
+    _temp56936 = [_temp56938, _temp56941, _temp57366];
+    var _children = _temp56936;
+    _temp56082 = (function (parent)
+    {
+      return DOM__addKids$(_children, parent);
+    });
+    _temp54374 = _temp56082(Container__offsetSpan$Int32__Int32_Int32_Int32(2.000000, 8.000000));
+    _temp50958 = [_temp54374];
+    var __children = _temp50958;
+    _temp44126 = (function (parent)
+    {
+      return DOM__addKids$(__children, parent);
+    });
+    _temp30462 = _temp44126(Container__row);
+    return [_temp30462];
+  });
+  Game__definitionId$ = (function (unitVar0)
+  {
+    return "def-id";
+  });
+  Game__getDefinitions$ = (function (unitVar0)
+  {
+    return definitions;
+  });
+  Game__getWords$ = (function (unitVar0)
+  {
+    return words;
+  });
+  Game__next$ = (function (unitVar0)
+  {
+    var words = Game__getWords$();
+    var definitions = Game__getDefinitions$();
+    var i = Game__randomInt$(Array__BoxedLength$(words));
+    var j = ((Game__randomInt$(10.000000) + i) % Array__BoxedLength$(words));
+    var _temp3130;
+    if ((i == j)) 
+    {
+      _temp3130 = (j + 1.000000);
+    }
+    else
+    {
+      _temp3130 = j;
+    };
+    var k = _temp3130;
+    var _k = ((Game__randomInt$(10.000000) + i) % Array__BoxedLength$(words));
+    var _temp3131;
+    if ((j == _k)) 
+    {
+      _temp3131 = (_k + 1.000000);
+    }
+    else
+    {
+      _temp3131 = _k;
+    };
+    var __k = _temp3131;
+    return (new AppState__AppState(Game__createPage$(), (function (_unitVar0)
+    {
+      var _temp57821;
+      var value = definitions[i];
+      _temp57821 = (function (tagId)
+      {
+        return Scripting__setText$(value, tagId);
+      });
+      _temp57821((function (arg00_)
+      {
+        return Game__definitionId$();
+      }));
+      var _temp57822;
+      var _value = words[i];
+      _temp57822 = (function (tagId)
+      {
+        return Scripting__setText$(_value, tagId);
+      });
+      _temp57822((function (arg00_)
+      {
+        return Game__word1Id$();
+      }));
+      var _temp57823;
+      var __value = words[j];
+      _temp57823 = (function (tagId)
+      {
+        return Scripting__setText$(__value, tagId);
+      });
+      _temp57823((function (arg00_)
+      {
+        return Game__word2Id$();
+      }));
+      var _temp57824;
+      var ___value = words[__k];
+      _temp57824 = (function (tagId)
+      {
+        return Scripting__setText$(___value, tagId);
+      });
+      _temp57824((function (arg00_)
+      {
+        return Game__word3Id$();
+      }));
+      return Async__FromContinuations$AppState_AppState_((function (tupledArg)
+      {
+        var onNext = tupledArg.Items[0.000000];
+        var _arg1 = tupledArg.Items[1.000000];
+        var _arg2 = tupledArg.Items[2.000000];
+        var matchValue = _arg1;
+        var _matchValue = _arg2;
+        var _temp57858;
+        var f = (function (__unitVar0)
+        {
+          return onNext(Game__next$());
+        });
+        _temp57858 = (function (tagId)
+        {
+          return Scripting__onClick$(f, tagId);
+        });
+        _temp57858((function (arg00_)
+        {
+          return Game__word1Id$();
+        }));
+        var _temp57859;
+        var _f = (function (__unitVar0)
+        {
+          return onNext(Game__next$());
+        });
+        _temp57859 = (function (tagId)
+        {
+          return Scripting__onClick$(_f, tagId);
+        });
+        _temp57859((function (arg00_)
+        {
+          return Game__word2Id$();
+        }));
+        var _temp57860;
+        var __f = (function (__unitVar0)
+        {
+          return onNext(Game__next$());
+        });
+        _temp57860 = (function (tagId)
+        {
+          return Scripting__onClick$(__f, tagId);
+        });
+        return _temp57860((function (arg00_)
+        {
+          return Game__word3Id$();
+        }));
+      }));
+    })));
+  });
+  Game__randomInt$ = (function (exclusiveUpper)
+  {
+    return (function (value)
+    {
+      return value;
+    })(Math.floor((Math.random() * exclusiveUpper)));
+  });
+  Game__word1Id$ = (function (unitVar0)
+  {
+    return "word1-id";
+  });
+  Game__word2Id$ = (function (unitVar0)
+  {
+    return "word2-id";
+  });
+  Game__word3Id$ = (function (unitVar0)
+  {
+    return "word3-id";
+  });
+  GenericComparer_1_String___ctor$String = (function (unitVar0)
+  {
+    ;
+  });
+  Html__get_a$ = (function ()
+  {
+    return Html__tag$("a");
+  });
+  Html__get_div$ = (function ()
+  {
+    return Html__tag$("div");
+  });
+  Html__get_i$ = (function ()
+  {
+    return Html__tag$("i");
+  });
+  Html__get_p$ = (function ()
+  {
+    return Html__tag$("p");
+  });
+  Html__get_span$ = (function ()
+  {
+    return Html__tag$("span");
+  });
+  Html__h$Int32_Int32 = (function (n)
+  {
+    return Html__tag$(("h" + n.toString()));
+  });
+  Html__tag$ = (function (name)
+  {
+    return (new Tag___ctor$(name, Map__Empty$String__String_String_String(), (new Content__Children([]))));
+  });
+  Icon__makeWhite$ = (function (i)
+  {
+    var _temp10;
+    var value = "icon-white";
+    _temp10 = (function (parent)
+    {
+      return DOM__addClass$(value, parent);
+    });
+    return _temp10(i);
+  });
+  Icons__get_Eject$ = (function ()
+  {
+    var _temp325;
+    var value = "icon-eject";
+    _temp325 = (function (parent)
+    {
+      return DOM__addClass$(value, parent);
+    });
+    return _temp325(Html__i);
+  });
+  Icons__get_InfoSign$ = (function ()
+  {
+    var _temp196;
+    var value = "icon-info-sign";
+    _temp196 = (function (parent)
+    {
+      return DOM__addClass$(value, parent);
+    });
+    return _temp196(Html__i);
+  });
+  Icons__get_Play$ = (function ()
+  {
+    var _temp11;
+    var value = "icon-play";
+    _temp11 = (function (parent)
+    {
+      return DOM__addClass$(value, parent);
+    });
+    return _temp11(Html__i);
+  });
+  Index__createPage$ = (function (unitVar0)
+  {
+    var _temp1602;
+    var _temp2366;
+    var _temp2748;
+    var _temp2812;
+    var _temp2844;
+    var _temp2860;
+    var _temp2868;
+    var _temp2872;
+    var _temp2874;
+    var _temp2875;
+    var str = "Play";
+    _temp2875 = (function (parent)
+    {
+      return DOM__addRaw$(str, parent);
+    });
+    _temp2874 = _temp2875(Html__span);
+    _temp2872 = [(function (i)
+    {
+      return Icon__makeWhite$(i);
+    })(Icons__Play), _temp2874];
+    var children = _temp2872;
+    _temp2868 = (function (parent)
+    {
+      return DOM__addKids$(children, parent);
+    });
+    _temp2860 = _temp2868((function (parent)
+    {
+      return DOM__addId$((function (arg00_)
+      {
+        return Index__playId$();
+      }), parent);
+    })(Button__success));
+    _temp2844 = (function (btn)
+    {
+      return Button__makeLarge$(btn);
+    })(_temp2860);
+    _temp2812 = (function (btn)
+    {
+      return Button__makeBlock$(btn);
+    })(_temp2844);
+    var _temp2939;
+    var _temp2971;
+    var _temp2987;
+    var _temp2995;
+    var _temp2999;
+    var _temp3001;
+    var _temp3002;
+    var _str = "High Scores";
+    _temp3002 = (function (parent)
+    {
+      return DOM__addRaw$(_str, parent);
+    });
+    _temp3001 = _temp3002(Html__span);
+    _temp2999 = [(function (i)
+    {
+      return Icon__makeWhite$(i);
+    })(Icons__InfoSign), _temp3001];
+    var _children = _temp2999;
+    _temp2995 = (function (parent)
+    {
+      return DOM__addKids$(_children, parent);
+    });
+    _temp2987 = _temp2995(Button__info);
+    _temp2971 = (function (btn)
+    {
+      return Button__makeLarge$(btn);
+    })(_temp2987);
+    _temp2939 = (function (btn)
+    {
+      return Button__makeBlock$(btn);
+    })(_temp2971);
+    var _temp3066;
+    var _temp3098;
+    var _temp3114;
+    var _temp3122;
+    var _temp3126;
+    var _temp3128;
+    var _temp3129;
+    var __str = "Exit";
+    _temp3129 = (function (parent)
+    {
+      return DOM__addRaw$(__str, parent);
+    });
+    _temp3128 = _temp3129(Html__span);
+    _temp3126 = [(function (i)
+    {
+      return Icon__makeWhite$(i);
+    })(Icons__Eject), _temp3128];
+    var __children = _temp3126;
+    _temp3122 = (function (parent)
+    {
+      return DOM__addKids$(__children, parent);
+    });
+    _temp3114 = _temp3122(Button__danger);
+    _temp3098 = (function (btn)
+    {
+      return Button__makeLarge$(btn);
+    })(_temp3114);
+    _temp3066 = (function (btn)
+    {
+      return Button__makeBlock$(btn);
+    })(_temp3098);
+    _temp2748 = [_temp2812, _temp2939, _temp3066];
+    var ___children = _temp2748;
+    _temp2366 = (function (parent)
+    {
+      return DOM__addKids$(___children, parent);
+    });
+    _temp1602 = _temp2366(Container__offsetSpan$Int32__Int32_Int32_Int32(4.000000, 8.000000));
+    return [_temp1602];
+  });
+  Index__next$ = (function (unitVar0)
+  {
+    return (new AppState__AppState(Index__createPage$(), (function (_unitVar0)
+    {
+      return Async__FromContinuations$AppState_AppState_((function (tupledArg)
+      {
+        var onNext = tupledArg.Items[0.000000];
+        var _arg1 = tupledArg.Items[1.000000];
+        var _arg2 = tupledArg.Items[2.000000];
+        var matchValue = _arg1;
+        var _matchValue = _arg2;
+        var _temp57862;
+        var f = (function (__unitVar0)
+        {
+          return onNext(Game__next$());
+        });
+        _temp57862 = (function (tagId)
+        {
+          return Scripting__onClick$(f, tagId);
+        });
+        return _temp57862((function (arg00_)
+        {
+          return Index__playId$();
+        }));
+      }));
+    })));
+  });
+  Index__playId$ = (function (unitVar0)
+  {
+    return "play-id";
+  });
+  KeyValuePair_2_String__String___ctor$String_String = (function (key, value)
+  {
+    this.key = key;
+    this.value = value;
+  });
+  KeyValuePair_2_String__String__get_Key$String_String = (function (__, unitVar1)
+  {
+    return __.key;
+  });
+  KeyValuePair_2_String__String__get_Value$String_String = (function (__, unitVar1)
+  {
+    return __.value;
+  });
+  List__CreateCons$MapTree_2_String__String_MapTree_2_String__String_ = (function (x, xs)
+  {
+    return (new list_1_MapTree_2_String__String__ConsMapTree_2_String__String_(x, xs));
+  });
+  List__Empty$MapTree_2_String__String_MapTree_2_String__String_ = (function ()
+  {
+    return (new list_1_MapTree_2_String__String__NilMapTree_2_String__String_());
+  });
+  List__Head$MapTree_2_String__String_MapTree_2_String__String_ = (function (_arg1)
+  {
+    if ((_arg1.Tag == 1.000000)) 
+    {
+      var xs = _arg1.Item2;
+      var x = _arg1.Item1;
+      return x;
+    }
+    else
+    {
+      throw ("List was empty");
+      return null;
+    };
+  });
+  List__IsEmpty$MapTree_2_String__String_MapTree_2_String__String_ = (function (_arg1)
+  {
+    return ((_arg1.Tag == 0.000000) && true);
+  });
+  List__Tail$MapTree_2_String__String_MapTree_2_String__String_ = (function (_arg1)
+  {
+    if ((_arg1.Tag == 1.000000)) 
+    {
+      var xs = _arg1.Item2;
+      var x = _arg1.Item1;
+      return xs;
+    }
+    else
+    {
+      throw ("List was empty");
+      return null;
+    };
+  });
+  MapIterator_2_String__String___ctor$String_String = (function (stack, started)
+  {
+    this.stack = stack;
+    this.started = started;
+  });
+  MapIterator_2_String__String___ctor$String_String.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = this.stack.CompareTo(that.stack);
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      __diff = ((this.started < that.started) ? -1.000000 : ((this.started == that.started) ? 0.000000 : 1.000000));
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        return 0.000000;
+      };
+    };
+  });
+  MapTreeModule__add$String__String_String_String = (function (comparer, k, v, m)
+  {
+    if ((m.Tag == 1.000000)) 
+    {
+      var k2 = m.Item1;
+      var c = comparer.Compare(k, k2);
+      if ((c < 0.000000)) 
+      {
+        return (new MapTree_2_String__String__MapNodeString_String(k, v, (new MapTree_2_String__String__MapEmptyString_String()), m, 2.000000));
+      }
+      else
+      {
+        if ((c == 0.000000)) 
+        {
+          return (new MapTree_2_String__String__MapOneString_String(k, v));
+        }
+        else
+        {
+          return (new MapTree_2_String__String__MapNodeString_String(k, v, m, (new MapTree_2_String__String__MapEmptyString_String()), 2.000000));
+        };
+      };
+    }
+    else
+    {
+      if ((m.Tag == 2.000000)) 
+      {
+        var v2 = m.Item2;
+        var r = m.Item4;
+        var l = m.Item3;
+        var _k2 = m.Item1;
+        var h = m.Item5;
+        var _c = comparer.Compare(k, _k2);
+        if ((_c < 0.000000)) 
+        {
+          return MapTreeModule__rebalance$String__String_String_String(MapTreeModule__add$String__String_String_String(comparer, k, v, l), _k2, v2, r);
+        }
+        else
+        {
+          if ((_c == 0.000000)) 
+          {
+            return (new MapTree_2_String__String__MapNodeString_String(k, v, l, r, h));
+          }
+          else
+          {
+            return MapTreeModule__rebalance$String__String_String_String(l, _k2, v2, MapTreeModule__add$String__String_String_String(comparer, k, v, r));
+          };
+        };
+      }
+      else
+      {
+        return (new MapTree_2_String__String__MapOneString_String(k, v));
+      };
+    };
+  });
+  MapTreeModule__alreadyFinished$KeyValuePair_2_String__String_KeyValuePair_2_String__String_ = (function (unitVar0)
+  {
+    throw ("enumeration already finished");
+    return null;
+  });
+  MapTreeModule__collapseLHS$String__String_String_String = (function (stack)
+  {
+    if ((stack.Tag == 1.000000)) 
+    {
+      if ((List__Head$MapTree_2_String__String_MapTree_2_String__String_(stack).Tag == 1.000000)) 
+      {
+        return stack;
+      }
+      else
+      {
+        if ((List__Head$MapTree_2_String__String_MapTree_2_String__String_(stack).Tag == 2.000000)) 
+        {
+          var k = List__Head$MapTree_2_String__String_MapTree_2_String__String_(stack).Item1;
+          var l = List__Head$MapTree_2_String__String_MapTree_2_String__String_(stack).Item3;
+          var r = List__Head$MapTree_2_String__String_MapTree_2_String__String_(stack).Item4;
+          var rest = List__Tail$MapTree_2_String__String_MapTree_2_String__String_(stack);
+          var v = List__Head$MapTree_2_String__String_MapTree_2_String__String_(stack).Item2;
+          return MapTreeModule__collapseLHS$String__String_String_String(List__CreateCons$MapTree_2_String__String_MapTree_2_String__String_(l, List__CreateCons$MapTree_2_String__String_MapTree_2_String__String_((new MapTree_2_String__String__MapOneString_String(k, v)), List__CreateCons$MapTree_2_String__String_MapTree_2_String__String_(r, rest))));
+        }
+        else
+        {
+          var _rest = List__Tail$MapTree_2_String__String_MapTree_2_String__String_(stack);
+          return MapTreeModule__collapseLHS$String__String_String_String(_rest);
+        };
+      };
+    }
+    else
+    {
+      return List__Empty$MapTree_2_String__String_MapTree_2_String__String_();
+    };
+  });
+  MapTreeModule__current$String__String_String_String = (function (i)
+  {
+    if (i.started) 
+    {
+      var matchValue = i.stack;
+      if ((matchValue.Tag == 0.000000)) 
+      {
+        return MapTreeModule__alreadyFinished$KeyValuePair_2_String__String_KeyValuePair_2_String__String_();
+      }
+      else
+      {
+        if ((List__Head$MapTree_2_String__String_MapTree_2_String__String_(matchValue).Tag == 1.000000)) 
+        {
+          var k = List__Head$MapTree_2_String__String_MapTree_2_String__String_(matchValue).Item1;
+          var v = List__Head$MapTree_2_String__String_MapTree_2_String__String_(matchValue).Item2;
+          return (new KeyValuePair_2_String__String___ctor$String_String(k, v));
+        }
+        else
+        {
+          throw ("Please report error: Map iterator, unexpected stack for current");
+          return null;
+        };
+      };
+    }
+    else
+    {
+      return MapTreeModule__notStarted$KeyValuePair_2_String__String_KeyValuePair_2_String__String_();
+    };
+  });
+  MapTreeModule__height$String__String_String_String = (function (_arg1)
+  {
+    if ((_arg1.Tag == 1.000000)) 
+    {
+      return 1.000000;
+    }
+    else
+    {
+      if ((_arg1.Tag == 2.000000)) 
+      {
+        var h = _arg1.Item5;
+        return h;
+      }
+      else
+      {
+        return 0.000000;
+      };
+    };
+  });
+  MapTreeModule__mk$String__String_String_String = (function (l, k, v, r)
+  {
+    var matchValue = (new TupleMapTree_2_String__String__MapTree_2_String__String_(l, r));
+    if ((matchValue.Items[0.000000].Tag == 0.000000)) 
+    {
+      if ((matchValue.Items[1.000000].Tag == 0.000000)) 
+      {
+        return (new MapTree_2_String__String__MapOneString_String(k, v));
+      }
+      else
+      {
+        var hl = MapTreeModule__height$String__String_String_String(l);
+        var hr = MapTreeModule__height$String__String_String_String(r);
+        var _temp1;
+        if ((hl < hr)) 
+        {
+          _temp1 = hr;
+        }
+        else
+        {
+          _temp1 = hl;
+        };
+        var m = _temp1;
+        return (new MapTree_2_String__String__MapNodeString_String(k, v, l, r, (m + 1.000000)));
+      };
+    }
+    else
+    {
+      var _hl = MapTreeModule__height$String__String_String_String(l);
+      var _hr = MapTreeModule__height$String__String_String_String(r);
+      var _temp2;
+      if ((_hl < _hr)) 
+      {
+        _temp2 = _hr;
+      }
+      else
+      {
+        _temp2 = _hl;
+      };
+      var _m = _temp2;
+      return (new MapTree_2_String__String__MapNodeString_String(k, v, l, r, (_m + 1.000000)));
+    };
+  });
+  MapTreeModule__mkIEnumerator$String__String_String_String = (function (s)
+  {
+    var impl;
+    impl = (new mkIEnumerator__2_String__String___ctor$String_String(s));
+    return {get_Current: (function (unitVar1)
+    {
+      return (function (self, unitVar1)
+      {
+        return MapTreeModule__current$String__String_String_String(self.i.contents);
+      })(impl, unitVar1);
+    }), Dispose: (function (unitVar1)
+    {
+      return (function (self, unitVar1)
+      {
+        ;
+      })(impl, unitVar1);
+    }), MoveNext: (function (unitVar1)
+    {
+      return (function (self, unitVar1)
+      {
+        return MapTreeModule__moveNext$String__String_String_String(self.i.contents);
+      })(impl, unitVar1);
+    }), get_Current1: (function (unitVar1)
+    {
+      return (function (self, unitVar1)
+      {
+        return MapTreeModule__current$String__String_String_String(self.i.contents);
+      })(impl, unitVar1);
+    }), Reset: (function (unitVar1)
+    {
+      return (function (self, unitVar1)
+      {
+        self.i.contents = MapTreeModule__mkIterator$String__String_String_String(self.s);
+      })(impl, unitVar1);
+    })};
+  });
+  MapTreeModule__mkIterator$String__String_String_String = (function (s)
+  {
+    return (new MapIterator_2_String__String___ctor$String_String(MapTreeModule__collapseLHS$String__String_String_String(List__CreateCons$MapTree_2_String__String_MapTree_2_String__String_(s, List__Empty$MapTree_2_String__String_MapTree_2_String__String_())), false));
+  });
+  MapTreeModule__moveNext$String__String_String_String = (function (i)
+  {
+    if (i.started) 
+    {
+      var matchValue = i.stack;
+      if ((matchValue.Tag == 0.000000)) 
+      {
+        return false;
+      }
+      else
+      {
+        if ((List__Head$MapTree_2_String__String_MapTree_2_String__String_(matchValue).Tag == 1.000000)) 
+        {
+          var rest = List__Tail$MapTree_2_String__String_MapTree_2_String__String_(matchValue);
+          i.stack = MapTreeModule__collapseLHS$String__String_String_String(rest);
+          null;
+          return (!List__IsEmpty$MapTree_2_String__String_MapTree_2_String__String_(i.stack));
+        }
+        else
+        {
+          throw ("Please report error: Map iterator, unexpected stack for moveNext");
+          return null;
+        };
+      };
+    }
+    else
+    {
+      i.started = true;
+      null;
+      return (!List__IsEmpty$MapTree_2_String__String_MapTree_2_String__String_(i.stack));
+    };
+  });
+  MapTreeModule__notStarted$KeyValuePair_2_String__String_KeyValuePair_2_String__String_ = (function (unitVar0)
+  {
+    throw ("enumeration not started");
+    return null;
+  });
+  MapTreeModule__rebalance$String__String_String_String = (function (t1, k, v, t2)
+  {
+    var t1h = MapTreeModule__height$String__String_String_String(t1);
+    var t2h = MapTreeModule__height$String__String_String_String(t2);
+    if ((t2h > (t1h + 2.000000))) 
+    {
+      if ((t2.Tag == 2.000000)) 
+      {
+        var t2v = t2.Item2;
+        var t2r = t2.Item4;
+        var t2l = t2.Item3;
+        var t2k = t2.Item1;
+        if ((MapTreeModule__height$String__String_String_String(t2l) > (t1h + 1.000000))) 
+        {
+          if ((t2l.Tag == 2.000000)) 
+          {
+            var t2lv = t2l.Item2;
+            var t2lr = t2l.Item4;
+            var t2ll = t2l.Item3;
+            var t2lk = t2l.Item1;
+            return MapTreeModule__mk$String__String_String_String(MapTreeModule__mk$String__String_String_String(t1, k, v, t2ll), t2lk, t2lv, MapTreeModule__mk$String__String_String_String(t2lr, t2k, t2v, t2r));
+          }
+          else
+          {
+            throw ("rebalance");
+            return null;
+          };
+        }
+        else
+        {
+          return MapTreeModule__mk$String__String_String_String(MapTreeModule__mk$String__String_String_String(t1, k, v, t2l), t2k, t2v, t2r);
+        };
+      }
+      else
+      {
+        throw ("rebalance");
+        return null;
+      };
+    }
+    else
+    {
+      if ((t1h > (t2h + 2.000000))) 
+      {
+        if ((t1.Tag == 2.000000)) 
+        {
+          var t1v = t1.Item2;
+          var t1r = t1.Item4;
+          var t1l = t1.Item3;
+          var t1k = t1.Item1;
+          if ((MapTreeModule__height$String__String_String_String(t1r) > (t2h + 1.000000))) 
+          {
+            if ((t1r.Tag == 2.000000)) 
+            {
+              var t1rv = t1r.Item2;
+              var t1rr = t1r.Item4;
+              var t1rl = t1r.Item3;
+              var t1rk = t1r.Item1;
+              return MapTreeModule__mk$String__String_String_String(MapTreeModule__mk$String__String_String_String(t1l, t1k, t1v, t1rl), t1rk, t1rv, MapTreeModule__mk$String__String_String_String(t1rr, k, v, t2));
+            }
+            else
+            {
+              throw ("re  balance");
+              return null;
+            };
+          }
+          else
+          {
+            return MapTreeModule__mk$String__String_String_String(t1l, t1k, t1v, MapTreeModule__mk$String__String_String_String(t1r, k, v, t2));
+          };
+        }
+        else
+        {
+          throw ("rebalance");
+          return null;
+        };
+      }
+      else
+      {
+        return MapTreeModule__mk$String__String_String_String(t1, k, v, t2);
+      };
+    };
+  });
+  MapTreeModule__tryFind$IComparable__Object_IComparable__Object_ = (function (comparer, k, m)
+  {
+    if ((m.Tag == 1.000000)) 
+    {
+      var v2 = m.Item2;
+      var k2 = m.Item1;
+      var c = comparer.Compare(k, k2);
+      if ((c == 0.000000)) 
+      {
+        return {Tag: 1.000000, Value: v2};
+      }
+      else
+      {
+        return {Tag: 0.000000};
+      };
+    }
+    else
+    {
+      if ((m.Tag == 2.000000)) 
+      {
+        var _v2 = m.Item2;
+        var r = m.Item4;
+        var l = m.Item3;
+        var _k2 = m.Item1;
+        var _c = comparer.Compare(k, _k2);
+        if ((_c < 0.000000)) 
+        {
+          return MapTreeModule__tryFind$IComparable__Object_IComparable__Object_(comparer, k, l);
+        }
+        else
+        {
+          if ((_c == 0.000000)) 
+          {
+            return {Tag: 1.000000, Value: _v2};
+          }
+          else
+          {
+            return MapTreeModule__tryFind$IComparable__Object_IComparable__Object_(comparer, k, r);
+          };
+        };
+      }
+      else
+      {
+        return {Tag: 0.000000};
+      };
+    };
+  });
+  MapTree_2_String__String__MapEmptyString_String = (function ()
+  {
+    this.Tag = 0.000000;
+    this._CaseName = "MapEmpty";
+  });
+  MapTree_2_String__String__MapEmptyString_String.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = ((this.Tag < that.Tag) ? -1.000000 : ((this.Tag == that.Tag) ? 0.000000 : 1.000000));
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      return 0.000000;
+    };
+  });
+  MapTree_2_String__String__MapNodeString_String = (function (Item1, Item2, Item3, Item4, Item5)
+  {
+    this.Tag = 2.000000;
+    this._CaseName = "MapNode";
+    this.Item1 = Item1;
+    this.Item2 = Item2;
+    this.Item3 = Item3;
+    this.Item4 = Item4;
+    this.Item5 = Item5;
+  });
+  MapTree_2_String__String__MapNodeString_String.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = ((this.Tag < that.Tag) ? -1.000000 : ((this.Tag == that.Tag) ? 0.000000 : 1.000000));
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      __diff = ((this.Item1 < that.Item1) ? -1.000000 : ((this.Item1 == that.Item1) ? 0.000000 : 1.000000));
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        var ___diff = 0.000000;
+        ___diff = ((this.Item2 < that.Item2) ? -1.000000 : ((this.Item2 == that.Item2) ? 0.000000 : 1.000000));
+        diff = ___diff;
+        if ((diff != 0.000000)) 
+        {
+          return diff;
+        }
+        else
+        {
+          var ____diff = 0.000000;
+          ____diff = this.Item3.CompareTo(that.Item3);
+          diff = ____diff;
+          if ((diff != 0.000000)) 
+          {
+            return diff;
+          }
+          else
+          {
+            var _____diff = 0.000000;
+            _____diff = this.Item4.CompareTo(that.Item4);
+            diff = _____diff;
+            if ((diff != 0.000000)) 
+            {
+              return diff;
+            }
+            else
+            {
+              var ______diff = 0.000000;
+              ______diff = ((this.Item5 < that.Item5) ? -1.000000 : ((this.Item5 == that.Item5) ? 0.000000 : 1.000000));
+              diff = ______diff;
+              if ((diff != 0.000000)) 
+              {
+                return diff;
+              }
+              else
+              {
+                return 0.000000;
+              };
+            };
+          };
+        };
+      };
+    };
+  });
+  MapTree_2_String__String__MapOneString_String = (function (Item1, Item2)
+  {
+    this.Tag = 1.000000;
+    this._CaseName = "MapOne";
+    this.Item1 = Item1;
+    this.Item2 = Item2;
+  });
+  MapTree_2_String__String__MapOneString_String.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = ((this.Tag < that.Tag) ? -1.000000 : ((this.Tag == that.Tag) ? 0.000000 : 1.000000));
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      __diff = ((this.Item1 < that.Item1) ? -1.000000 : ((this.Item1 == that.Item1) ? 0.000000 : 1.000000));
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        var ___diff = 0.000000;
+        ___diff = ((this.Item2 < that.Item2) ? -1.000000 : ((this.Item2 == that.Item2) ? 0.000000 : 1.000000));
+        diff = ___diff;
+        if ((diff != 0.000000)) 
+        {
+          return diff;
+        }
+        else
+        {
+          return 0.000000;
+        };
+      };
+    };
+  });
+  Map__Add$String__String_String_String = (function (k, v, m)
+  {
+    return FSharpMap_2_String__String__Add$String_String(m, k, v);
+  });
+  Map__Empty$String__String_String_String = (function ()
+  {
+    return FSharpMap_2_String__String__get_Empty$String_String();
+  });
+  Map__ToSeq$String__String_String_String = (function (m)
+  {
+    var _temp57887;
+    var mapping = (function (kvp)
+    {
+      return (new TupleString_String(KeyValuePair_2_String__String__get_Key$String_String(kvp), KeyValuePair_2_String__String__get_Value$String_String(kvp)));
+    });
+    _temp57887 = (function (source)
+    {
+      var _temp57889;
+      var _temp57890;
+      var impl;
+      impl = source;
+      _temp57890 = {GetEnumerator: (function (unitVar1)
+      {
+        return (function (_m, unitVar1)
+        {
+          return MapTreeModule__mkIEnumerator$String__String_String_String(_m.tree_390);
+        })(impl, unitVar1);
+      }), GetEnumerator1: (function (unitVar1)
+      {
+        return (function (_m, unitVar1)
+        {
+          return MapTreeModule__mkIEnumerator$String__String_String_String(_m.tree_390);
+        })(impl, unitVar1);
+      })};
+      _temp57889 = _temp57890;
+      return Seq__Map$KeyValuePair_2_String__String__Tuple_2_String__String_KeyValuePair_2_String__String__Tuple_2_String__String_(mapping, _temp57889);
+    });
+    return _temp57887(m);
+  });
+  Option__IsSome$Boolean_Boolean = (function (option)
+  {
+    return ((option.Tag == 1.000000) && true);
+  });
+  Option__IsSome$FSharpOption_1_String_FSharpOption_1_String_ = (function (option)
+  {
+    return ((option.Tag == 1.000000) && true);
+  });
+  Option__IsSome$IEnumerator_1_KeyValuePair_2_String__String_IEnumerator_1_KeyValuePair_2_String__String_ = (function (option)
+  {
+    return ((option.Tag == 1.000000) && true);
+  });
+  Option__IsSome$IEnumerator_1_String_IEnumerator_1_String_ = (function (option)
+  {
+    return ((option.Tag == 1.000000) && true);
+  });
+  Option__IsSome$IEnumerator_1_Tag_IEnumerator_1_Tag_ = (function (option)
+  {
+    return ((option.Tag == 1.000000) && true);
+  });
+  Option__IsSome$IEnumerator_1_Tuple_2_String__String_IEnumerator_1_Tuple_2_String__String_ = (function (option)
+  {
+    return ((option.Tag == 1.000000) && true);
+  });
+  Option__IsSome$Int32_Int32 = (function (option)
+  {
+    return ((option.Tag == 1.000000) && true);
+  });
+  Option__IsSome$Tuple_2_IEnumerator_1_String__IEnumerator_1_String_Tuple_2_IEnumerator_1_String__IEnumerator_1_String_ = (function (option)
+  {
+    return ((option.Tag == 1.000000) && true);
+  });
+  Scripting__onClick$ = (function (f, tagId)
+  {
+    var _temp57841;
+    var _temp57849;
+    var _temp57853;
+    var _temp57855;
+    var _temp57856;
+    _temp57855 = tagId(_temp57856);
+    _temp57853 = ("#" + _temp57855);
+    _temp57849 = $(_temp57853);
+    _temp57841 = _temp57849.click((function (_arg1)
+    {
+      var _temp57857;
+      f(_temp57857);
+    }));
+    return (function (value)
+    {
+      var ignored0 = value;
+    })(_temp57841);
+  });
+  Scripting__setHtml$ = (function (value, tagId)
+  {
+    var _temp57947;
+    var _temp57955;
+    var _temp57959;
+    var _temp57961;
+    var _temp57962;
+    _temp57961 = tagId(_temp57962);
+    _temp57959 = ("#" + _temp57961);
+    _temp57955 = $(_temp57959);
+    _temp57947 = _temp57955.html(value);
+    return (function (_value)
+    {
+      var ignored0 = _value;
+    })(_temp57947);
+  });
+  Scripting__setText$ = (function (value, tagId)
+  {
+    var _temp57805;
+    var _temp57813;
+    var _temp57817;
+    var _temp57819;
+    var _temp57820;
+    _temp57819 = tagId(_temp57820);
+    _temp57817 = ("#" + _temp57819);
+    _temp57813 = $(_temp57817);
+    _temp57805 = _temp57813.text(value);
+    return (function (_value)
+    {
+      var ignored0 = _value;
+    })(_temp57805);
+  });
+  Seq__Append$String_String = (function (xs, ys)
+  {
+    return (function (f)
+    {
+      return Seq__Delay$String_String(f);
+    })((function (unitVar0)
+    {
+      var enums = (new TupleIEnumerator_1_String__IEnumerator_1_String_(Seq__Enumerator$String_String(xs), Seq__Enumerator$String_String(ys)));
+      var _temp57903;
+      var f = (function (_arg1)
+      {
+        var _temp57904;
+        var next = _arg1.Items[1.000000];
+        var _enums = _arg1;
+        var curr = _arg1.Items[0.000000];
+        _temp57904 = curr.MoveNext();
+        if (_temp57904) 
+        {
+          var _next = _arg1.Items[1.000000];
+          var __enums = _arg1;
+          var _curr = _arg1.Items[0.000000];
+          return {Tag: 1.000000, Value: (new TupleString_Tuple_2_IEnumerator_1_String__IEnumerator_1_String_(_curr.get_Current(), __enums))};
+        }
+        else
+        {
+          var _temp57905;
+          var __next = _arg1.Items[1.000000];
+          var __curr = _arg1.Items[0.000000];
+          _temp57905 = __next.MoveNext();
+          if (_temp57905) 
+          {
+            var ___next = _arg1.Items[1.000000];
+            var ___curr = _arg1.Items[0.000000];
+            return {Tag: 1.000000, Value: (new TupleString_Tuple_2_IEnumerator_1_String__IEnumerator_1_String_(___next.get_Current(), (new TupleIEnumerator_1_String__IEnumerator_1_String_(___next, ___curr))))};
+          }
+          else
+          {
+            return {Tag: 0.000000};
+          };
+        };
+      });
+      _temp57903 = (function (seed)
+      {
+        return Seq__Unfold$Tuple_2_IEnumerator_1_String__IEnumerator_1_String__String_Tuple_2_IEnumerator_1_String__IEnumerator_1_String__String(f, seed);
+      });
+      return _temp57903(enums);
+    }));
+  });
+  Seq__Collect$Tag__IEnumerable_1_String__String_Tag__IEnumerable_1_String__String = (function (f, xs)
+  {
+    return (function (_xs)
+    {
+      return Seq__Concat$IEnumerable_1_String__String_IEnumerable_1_String__String(_xs);
+    })(Seq__Map$Tag__IEnumerable_1_String_Tag__IEnumerable_1_String_(f, xs));
+  });
+  Seq__Concat$IEnumerable_1_String__String_IEnumerable_1_String__String = (function (xs)
+  {
+    return Seq__Fold$IEnumerable_1_String__IEnumerable_1_String_IEnumerable_1_String__IEnumerable_1_String_((function (_xs)
+    {
+      return (function (ys)
+      {
+        return Seq__Append$String_String(_xs, ys);
+      });
+    }), Seq__Empty$String_String(), xs);
+  });
+  Seq__Delay$IEnumerable_1_String_IEnumerable_1_String_ = (function (f)
+  {
+    return Seq__FromFactory$IEnumerable_1_String_IEnumerable_1_String_((function (unitVar0)
+    {
+      var _temp57908;
+      var _temp57909;
+      _temp57908 = f(_temp57909);
+      return Seq__Enumerator$IEnumerable_1_String_IEnumerable_1_String_(_temp57908);
+    }));
+  });
+  Seq__Delay$String_String = (function (f)
+  {
+    return Seq__FromFactory$String_String((function (unitVar0)
+    {
+      var _temp57868;
+      var _temp57869;
+      _temp57868 = f(_temp57869);
+      return Seq__Enumerator$String_String(_temp57868);
+    }));
+  });
+  Seq__Delay$Tuple_2_String__String_Tuple_2_String__String_ = (function (f)
+  {
+    return Seq__FromFactory$Tuple_2_String__String_Tuple_2_String__String_((function (unitVar0)
+    {
+      var _temp57881;
+      var _temp57882;
+      _temp57881 = f(_temp57882);
+      return Seq__Enumerator$Tuple_2_String__String_Tuple_2_String__String_(_temp57881);
+    }));
+  });
+  Seq__Empty$String_String = (function ()
+  {
+    return Seq__Unfold$Boolean__String_Boolean_String((function (_arg1)
+    {
+      return {Tag: 0.000000};
+    }), false);
+  });
+  Seq__Enumerator$IEnumerable_1_String_IEnumerable_1_String_ = (function (xs)
+  {
+    return xs.GetEnumerator();
+  });
+  Seq__Enumerator$KeyValuePair_2_String__String_KeyValuePair_2_String__String_ = (function (xs)
+  {
+    return xs.GetEnumerator();
+  });
+  Seq__Enumerator$String_String = (function (xs)
+  {
+    return xs.GetEnumerator();
+  });
+  Seq__Enumerator$Tag_Tag_ = (function (xs)
+  {
+    return xs.GetEnumerator();
+  });
+  Seq__Enumerator$Tuple_2_String__String_Tuple_2_String__String_ = (function (xs)
+  {
+    return xs.GetEnumerator();
+  });
+  Seq__Fold$IEnumerable_1_String__IEnumerable_1_String_IEnumerable_1_String__IEnumerable_1_String_ = (function (f, seed, xs)
+  {
+    return Seq__FoldIndexed$IEnumerable_1_String__IEnumerable_1_String_IEnumerable_1_String__IEnumerable_1_String_((function (_arg1)
+    {
+      return (function (acc)
+      {
+        return (function (x)
+        {
+          return f(acc)(x);
+        });
+      });
+    }), seed, xs);
+  });
+  Seq__FoldIndexed$IEnumerable_1_String__IEnumerable_1_String_IEnumerable_1_String__IEnumerable_1_String_ = (function (f, seed, xs)
+  {
+    return Seq__FoldIndexedAux$IEnumerable_1_String__IEnumerable_1_String_IEnumerable_1_String__IEnumerable_1_String_(f, 0.000000, seed, Seq__Enumerator$IEnumerable_1_String_IEnumerable_1_String_(xs));
+  });
+  Seq__FoldIndexed$String__Unit_String_Unit_ = (function (f, seed, xs)
+  {
+    return Seq__FoldIndexedAux$Unit__String_Unit__String(f, 0.000000, seed, Seq__Enumerator$String_String(xs));
+  });
+  Seq__FoldIndexedAux$IEnumerable_1_String__IEnumerable_1_String_IEnumerable_1_String__IEnumerable_1_String_ = (function (f, i, acc, xs)
+  {
+    if (xs.MoveNext()) 
+    {
+      return Seq__FoldIndexedAux$IEnumerable_1_String__IEnumerable_1_String_IEnumerable_1_String__IEnumerable_1_String_(f, (i + 1.000000), f(i)(acc)(xs.get_Current()), xs);
+    }
+    else
+    {
+      return acc;
+    };
+  });
+  Seq__FoldIndexedAux$Unit__String_Unit__String = (function (f, i, acc, xs)
+  {
+    if (xs.MoveNext()) 
+    {
+      return Seq__FoldIndexedAux$Unit__String_Unit__String(f, (i + 1.000000), f(i)(acc)(xs.get_Current()), xs);
+    }
+    else
+    {
+      return acc;
+    };
+  });
+  Seq__FromFactory$IEnumerable_1_String_IEnumerable_1_String_ = (function (f)
+  {
+    var impl;
+    impl = (new CreateEnumerable_1_IEnumerable_1_String___ctor$IEnumerable_1_String_(f));
+    return {GetEnumerator: (function (unitVar1)
+    {
+      return (function (__, unitVar1)
+      {
+        var _temp57910;
+        return __.factory(_temp57910);
+      })(impl, unitVar1);
+    }), GetEnumerator1: (function (unitVar1)
+    {
+      return (function (__, unitVar1)
+      {
+        var _temp57911;
+        return __.factory(_temp57911);
+      })(impl, unitVar1);
+    })};
+  });
+  Seq__FromFactory$String_String = (function (f)
+  {
+    var impl;
+    impl = (new CreateEnumerable_1_String___ctor$String(f));
+    return {GetEnumerator: (function (unitVar1)
+    {
+      return (function (__, unitVar1)
+      {
+        var _temp57870;
+        return __.factory(_temp57870);
+      })(impl, unitVar1);
+    }), GetEnumerator1: (function (unitVar1)
+    {
+      return (function (__, unitVar1)
+      {
+        var _temp57871;
+        return __.factory(_temp57871);
+      })(impl, unitVar1);
+    })};
+  });
+  Seq__FromFactory$Tag_Tag_ = (function (f)
+  {
+    var impl;
+    impl = (new CreateEnumerable_1_Tag___ctor$Tag_(f));
+    return {GetEnumerator: (function (unitVar1)
+    {
+      return (function (__, unitVar1)
+      {
+        var _temp57897;
+        return __.factory(_temp57897);
+      })(impl, unitVar1);
+    }), GetEnumerator1: (function (unitVar1)
+    {
+      return (function (__, unitVar1)
+      {
+        var _temp57898;
+        return __.factory(_temp57898);
+      })(impl, unitVar1);
+    })};
+  });
+  Seq__FromFactory$Tuple_2_String__String_Tuple_2_String__String_ = (function (f)
+  {
+    var impl;
+    impl = (new CreateEnumerable_1_Tuple_2_String__String___ctor$Tuple_2_String__String_(f));
+    return {GetEnumerator: (function (unitVar1)
+    {
+      return (function (__, unitVar1)
+      {
+        var _temp57883;
+        return __.factory(_temp57883);
+      })(impl, unitVar1);
+    }), GetEnumerator1: (function (unitVar1)
+    {
+      return (function (__, unitVar1)
+      {
+        var _temp57884;
+        return __.factory(_temp57884);
+      })(impl, unitVar1);
+    })};
+  });
+  Seq__IterateIndexed$String_String = (function (f, xs)
+  {
+    var _temp57864;
+    return Seq__FoldIndexed$String__Unit_String_Unit_((function (i)
+    {
+      return (function (unitVar1)
+      {
+        return (function (x)
+        {
+          return f(i)(x);
+        });
+      });
+    }), _temp57864, xs);
+  });
+  Seq__Map$KeyValuePair_2_String__String__Tuple_2_String__String_KeyValuePair_2_String__String__Tuple_2_String__String_ = (function (f, xs)
+  {
+    return (function (_f)
+    {
+      return Seq__Delay$Tuple_2_String__String_Tuple_2_String__String_(_f);
+    })((function (unitVar0)
+    {
+      var _temp57886;
+      var _f = (function (_enum)
+      {
+        if (_enum.MoveNext()) 
+        {
+          return {Tag: 1.000000, Value: (new TupleTuple_2_String__String__IEnumerator_1_KeyValuePair_2_String__String_(f(_enum.get_Current()), _enum))};
+        }
+        else
+        {
+          return {Tag: 0.000000};
+        };
+      });
+      _temp57886 = (function (seed)
+      {
+        return Seq__Unfold$IEnumerator_1_KeyValuePair_2_String__String__Tuple_2_String__String_IEnumerator_1_KeyValuePair_2_String__String__Tuple_2_String__String_(_f, seed);
+      });
+      return _temp57886(Seq__Enumerator$KeyValuePair_2_String__String_KeyValuePair_2_String__String_(xs));
+    }));
+  });
+  Seq__Map$String__String_String_String = (function (f, xs)
+  {
+    return (function (_f)
+    {
+      return Seq__Delay$String_String(_f);
+    })((function (unitVar0)
+    {
+      var _temp57894;
+      var _f = (function (_enum)
+      {
+        if (_enum.MoveNext()) 
+        {
+          return {Tag: 1.000000, Value: (new TupleString_IEnumerator_1_String_(f(_enum.get_Current()), _enum))};
+        }
+        else
+        {
+          return {Tag: 0.000000};
+        };
+      });
+      _temp57894 = (function (seed)
+      {
+        return Seq__Unfold$IEnumerator_1_String__String_IEnumerator_1_String__String(_f, seed);
+      });
+      return _temp57894(Seq__Enumerator$String_String(xs));
+    }));
+  });
+  Seq__Map$Tag__IEnumerable_1_String_Tag__IEnumerable_1_String_ = (function (f, xs)
+  {
+    return (function (_f)
+    {
+      return Seq__Delay$IEnumerable_1_String_IEnumerable_1_String_(_f);
+    })((function (unitVar0)
+    {
+      var _temp57913;
+      var _f = (function (_enum)
+      {
+        if (_enum.MoveNext()) 
+        {
+          return {Tag: 1.000000, Value: (new TupleIEnumerable_1_String__IEnumerator_1_Tag_(f(_enum.get_Current()), _enum))};
+        }
+        else
+        {
+          return {Tag: 0.000000};
+        };
+      });
+      _temp57913 = (function (seed)
+      {
+        return Seq__Unfold$IEnumerator_1_Tag__IEnumerable_1_String_IEnumerator_1_Tag__IEnumerable_1_String_(_f, seed);
+      });
+      return _temp57913(Seq__Enumerator$Tag_Tag_(xs));
+    }));
+  });
+  Seq__Map$Tuple_2_String__String__String_Tuple_2_String__String__String = (function (f, xs)
+  {
+    return (function (_f)
+    {
+      return Seq__Delay$String_String(_f);
+    })((function (unitVar0)
+    {
+      var _temp57873;
+      var _f = (function (_enum)
+      {
+        if (_enum.MoveNext()) 
+        {
+          return {Tag: 1.000000, Value: (new TupleString_IEnumerator_1_Tuple_2_String__String_(f(_enum.get_Current()), _enum))};
+        }
+        else
+        {
+          return {Tag: 0.000000};
+        };
+      });
+      _temp57873 = (function (seed)
+      {
+        return Seq__Unfold$IEnumerator_1_Tuple_2_String__String__String_IEnumerator_1_Tuple_2_String__String__String(_f, seed);
+      });
+      return _temp57873(Seq__Enumerator$Tuple_2_String__String_Tuple_2_String__String_(xs));
+    }));
+  });
+  Seq__OfArray$Tag_Tag_ = (function (xs)
+  {
+    var _temp57899;
+    var f = (function (i)
+    {
+      if ((i < Array__BoxedLength$(xs))) 
+      {
+        return {Tag: 1.000000, Value: (new TupleTag__Int32(xs[i], (i + 1.000000)))};
+      }
+      else
+      {
+        return {Tag: 0.000000};
+      };
+    });
+    _temp57899 = (function (seed)
+    {
+      return Seq__Unfold$Int32__Tag_Int32_Tag_(f, seed);
+    });
+    return _temp57899(0.000000);
+  });
+  Seq__Singleton$String_String = (function (x)
+  {
+    var _temp57892;
+    var f = (function (_arg1)
+    {
+      if ((_arg1.Tag == 0.000000)) 
+      {
+        return {Tag: 0.000000};
+      }
+      else
+      {
+        var _x = _arg1.Value;
+        return {Tag: 1.000000, Value: (new TupleString_FSharpOption_1_String_(_x, {Tag: 0.000000}))};
+      };
+    });
+    _temp57892 = (function (seed)
+    {
+      return Seq__Unfold$FSharpOption_1_String__String_FSharpOption_1_String__String(f, seed);
+    });
+    return _temp57892({Tag: 1.000000, Value: x});
+  });
+  Seq__ToArray$String_String = (function (xs)
+  {
+    var ys = Array__ZeroCreate$String_String(0.000000);
+    var _temp57865;
+    var f = (function (i)
+    {
+      return (function (x)
+      {
+        ys[i] = x;
+        return null;
+      });
+    });
+    _temp57865 = (function (_xs)
+    {
+      return Seq__IterateIndexed$String_String(f, _xs);
+    });
+    _temp57865(xs);
+    return ys;
+  });
+  Seq__Unfold$Boolean__String_Boolean_String = (function (f, seed)
+  {
+    return Seq__FromFactory$String_String((function (unitVar0)
+    {
+      var impl;
+      impl = (new UnfoldEnumerator_2_Boolean__String___ctor$Boolean_String(seed, f));
+      return {get_Current: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          return __.current;
+        })(impl, unitVar1);
+      }), Dispose: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          ;
+        })(impl, unitVar1);
+      }), MoveNext: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          var next = (function (_unitVar0)
+          {
+            var currAcc = __.acc.Value;
+            var x = __.unfold(currAcc);
+            if ((x.Tag == 1.000000)) 
+            {
+              var value = x.Value.Items[0.000000];
+              var nextAcc = x.Value.Items[1.000000];
+              __.acc = {Tag: 1.000000, Value: nextAcc};
+              __.current = value;
+              return true;
+            }
+            else
+            {
+              __.acc = {Tag: 0.000000};
+              __.current = null;
+              return false;
+            };
+          });
+          return (Option__IsSome$Boolean_Boolean(__.acc) && (function ()
+          {
+            var _temp57906;
+            return next(_temp57906);
+          })());
+        })(impl, unitVar1);
+      }), get_Current1: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          return __.current;
+        })(impl, unitVar1);
+      }), Reset: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          __.acc = {Tag: 1.000000, Value: __.seed};
+          __.current = null;
+        })(impl, unitVar1);
+      })};
+    }));
+  });
+  Seq__Unfold$FSharpOption_1_String__String_FSharpOption_1_String__String = (function (f, seed)
+  {
+    return Seq__FromFactory$String_String((function (unitVar0)
+    {
+      var impl;
+      impl = (new UnfoldEnumerator_2_FSharpOption_1_String__String___ctor$FSharpOption_1_String__String(seed, f));
+      return {get_Current: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          return __.current;
+        })(impl, unitVar1);
+      }), Dispose: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          ;
+        })(impl, unitVar1);
+      }), MoveNext: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          var next = (function (_unitVar0)
+          {
+            var currAcc = __.acc.Value;
+            var x = __.unfold(currAcc);
+            if ((x.Tag == 1.000000)) 
+            {
+              var value = x.Value.Items[0.000000];
+              var nextAcc = x.Value.Items[1.000000];
+              __.acc = {Tag: 1.000000, Value: nextAcc};
+              __.current = value;
+              return true;
+            }
+            else
+            {
+              __.acc = {Tag: 0.000000};
+              __.current = null;
+              return false;
+            };
+          });
+          return (Option__IsSome$FSharpOption_1_String_FSharpOption_1_String_(__.acc) && (function ()
+          {
+            var _temp57891;
+            return next(_temp57891);
+          })());
+        })(impl, unitVar1);
+      }), get_Current1: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          return __.current;
+        })(impl, unitVar1);
+      }), Reset: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          __.acc = {Tag: 1.000000, Value: __.seed};
+          __.current = null;
+        })(impl, unitVar1);
+      })};
+    }));
+  });
+  Seq__Unfold$IEnumerator_1_KeyValuePair_2_String__String__Tuple_2_String__String_IEnumerator_1_KeyValuePair_2_String__String__Tuple_2_String__String_ = (function (f, seed)
+  {
+    return Seq__FromFactory$Tuple_2_String__String_Tuple_2_String__String_((function (unitVar0)
+    {
+      var impl;
+      impl = (new UnfoldEnumerator_2_IEnumerator_1_KeyValuePair_2_String__String__Tuple_2_String__String___ctor$IEnumerator_1_KeyValuePair_2_String__String__Tuple_2_String__String_(seed, f));
+      return {get_Current: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          return __.current;
+        })(impl, unitVar1);
+      }), Dispose: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          ;
+        })(impl, unitVar1);
+      }), MoveNext: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          var next = (function (_unitVar0)
+          {
+            var currAcc = __.acc.Value;
+            var x = __.unfold(currAcc);
+            if ((x.Tag == 1.000000)) 
+            {
+              var value = x.Value.Items[0.000000];
+              var nextAcc = x.Value.Items[1.000000];
+              __.acc = {Tag: 1.000000, Value: nextAcc};
+              __.current = value;
+              return true;
+            }
+            else
+            {
+              __.acc = {Tag: 0.000000};
+              __.current = null;
+              return false;
+            };
+          });
+          return (Option__IsSome$IEnumerator_1_KeyValuePair_2_String__String_IEnumerator_1_KeyValuePair_2_String__String_(__.acc) && (function ()
+          {
+            var _temp57885;
+            return next(_temp57885);
+          })());
+        })(impl, unitVar1);
+      }), get_Current1: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          return __.current;
+        })(impl, unitVar1);
+      }), Reset: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          __.acc = {Tag: 1.000000, Value: __.seed};
+          __.current = null;
+        })(impl, unitVar1);
+      })};
+    }));
+  });
+  Seq__Unfold$IEnumerator_1_String__String_IEnumerator_1_String__String = (function (f, seed)
+  {
+    return Seq__FromFactory$String_String((function (unitVar0)
+    {
+      var impl;
+      impl = (new UnfoldEnumerator_2_IEnumerator_1_String__String___ctor$IEnumerator_1_String__String(seed, f));
+      return {get_Current: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          return __.current;
+        })(impl, unitVar1);
+      }), Dispose: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          ;
+        })(impl, unitVar1);
+      }), MoveNext: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          var next = (function (_unitVar0)
+          {
+            var currAcc = __.acc.Value;
+            var x = __.unfold(currAcc);
+            if ((x.Tag == 1.000000)) 
+            {
+              var value = x.Value.Items[0.000000];
+              var nextAcc = x.Value.Items[1.000000];
+              __.acc = {Tag: 1.000000, Value: nextAcc};
+              __.current = value;
+              return true;
+            }
+            else
+            {
+              __.acc = {Tag: 0.000000};
+              __.current = null;
+              return false;
+            };
+          });
+          return (Option__IsSome$IEnumerator_1_String_IEnumerator_1_String_(__.acc) && (function ()
+          {
+            var _temp57893;
+            return next(_temp57893);
+          })());
+        })(impl, unitVar1);
+      }), get_Current1: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          return __.current;
+        })(impl, unitVar1);
+      }), Reset: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          __.acc = {Tag: 1.000000, Value: __.seed};
+          __.current = null;
+        })(impl, unitVar1);
+      })};
+    }));
+  });
+  Seq__Unfold$IEnumerator_1_Tag__IEnumerable_1_String_IEnumerator_1_Tag__IEnumerable_1_String_ = (function (f, seed)
+  {
+    return Seq__FromFactory$IEnumerable_1_String_IEnumerable_1_String_((function (unitVar0)
+    {
+      var impl;
+      impl = (new UnfoldEnumerator_2_IEnumerator_1_Tag__IEnumerable_1_String___ctor$IEnumerator_1_Tag__IEnumerable_1_String_(seed, f));
+      return {get_Current: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          return __.current;
+        })(impl, unitVar1);
+      }), Dispose: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          ;
+        })(impl, unitVar1);
+      }), MoveNext: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          var next = (function (_unitVar0)
+          {
+            var currAcc = __.acc.Value;
+            var x = __.unfold(currAcc);
+            if ((x.Tag == 1.000000)) 
+            {
+              var value = x.Value.Items[0.000000];
+              var nextAcc = x.Value.Items[1.000000];
+              __.acc = {Tag: 1.000000, Value: nextAcc};
+              __.current = value;
+              return true;
+            }
+            else
+            {
+              __.acc = {Tag: 0.000000};
+              __.current = null;
+              return false;
+            };
+          });
+          return (Option__IsSome$IEnumerator_1_Tag_IEnumerator_1_Tag_(__.acc) && (function ()
+          {
+            var _temp57912;
+            return next(_temp57912);
+          })());
+        })(impl, unitVar1);
+      }), get_Current1: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          return __.current;
+        })(impl, unitVar1);
+      }), Reset: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          __.acc = {Tag: 1.000000, Value: __.seed};
+          __.current = null;
+        })(impl, unitVar1);
+      })};
+    }));
+  });
+  Seq__Unfold$IEnumerator_1_Tuple_2_String__String__String_IEnumerator_1_Tuple_2_String__String__String = (function (f, seed)
+  {
+    return Seq__FromFactory$String_String((function (unitVar0)
+    {
+      var impl;
+      impl = (new UnfoldEnumerator_2_IEnumerator_1_Tuple_2_String__String__String___ctor$IEnumerator_1_Tuple_2_String__String__String(seed, f));
+      return {get_Current: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          return __.current;
+        })(impl, unitVar1);
+      }), Dispose: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          ;
+        })(impl, unitVar1);
+      }), MoveNext: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          var next = (function (_unitVar0)
+          {
+            var currAcc = __.acc.Value;
+            var x = __.unfold(currAcc);
+            if ((x.Tag == 1.000000)) 
+            {
+              var value = x.Value.Items[0.000000];
+              var nextAcc = x.Value.Items[1.000000];
+              __.acc = {Tag: 1.000000, Value: nextAcc};
+              __.current = value;
+              return true;
+            }
+            else
+            {
+              __.acc = {Tag: 0.000000};
+              __.current = null;
+              return false;
+            };
+          });
+          return (Option__IsSome$IEnumerator_1_Tuple_2_String__String_IEnumerator_1_Tuple_2_String__String_(__.acc) && (function ()
+          {
+            var _temp57872;
+            return next(_temp57872);
+          })());
+        })(impl, unitVar1);
+      }), get_Current1: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          return __.current;
+        })(impl, unitVar1);
+      }), Reset: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          __.acc = {Tag: 1.000000, Value: __.seed};
+          __.current = null;
+        })(impl, unitVar1);
+      })};
+    }));
+  });
+  Seq__Unfold$Int32__Tag_Int32_Tag_ = (function (f, seed)
+  {
+    return Seq__FromFactory$Tag_Tag_((function (unitVar0)
+    {
+      var impl;
+      impl = (new UnfoldEnumerator_2_Int32__Tag___ctor$Int32_Tag_(seed, f));
+      return {get_Current: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          return __.current;
+        })(impl, unitVar1);
+      }), Dispose: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          ;
+        })(impl, unitVar1);
+      }), MoveNext: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          var next = (function (_unitVar0)
+          {
+            var currAcc = __.acc.Value;
+            var x = __.unfold(currAcc);
+            if ((x.Tag == 1.000000)) 
+            {
+              var value = x.Value.Items[0.000000];
+              var nextAcc = x.Value.Items[1.000000];
+              __.acc = {Tag: 1.000000, Value: nextAcc};
+              __.current = value;
+              return true;
+            }
+            else
+            {
+              __.acc = {Tag: 0.000000};
+              __.current = null;
+              return false;
+            };
+          });
+          return (Option__IsSome$Int32_Int32(__.acc) && (function ()
+          {
+            var _temp57896;
+            return next(_temp57896);
+          })());
+        })(impl, unitVar1);
+      }), get_Current1: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          return __.current;
+        })(impl, unitVar1);
+      }), Reset: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          __.acc = {Tag: 1.000000, Value: __.seed};
+          __.current = null;
+        })(impl, unitVar1);
+      })};
+    }));
+  });
+  Seq__Unfold$Tuple_2_IEnumerator_1_String__IEnumerator_1_String__String_Tuple_2_IEnumerator_1_String__IEnumerator_1_String__String = (function (f, seed)
+  {
+    return Seq__FromFactory$String_String((function (unitVar0)
+    {
+      var impl;
+      impl = (new UnfoldEnumerator_2_Tuple_2_IEnumerator_1_String__IEnumerator_1_String__String___ctor$Tuple_2_IEnumerator_1_String__IEnumerator_1_String__String(seed, f));
+      return {get_Current: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          return __.current;
+        })(impl, unitVar1);
+      }), Dispose: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          ;
+        })(impl, unitVar1);
+      }), MoveNext: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          var next = (function (_unitVar0)
+          {
+            var currAcc = __.acc.Value;
+            var x = __.unfold(currAcc);
+            if ((x.Tag == 1.000000)) 
+            {
+              var value = x.Value.Items[0.000000];
+              var nextAcc = x.Value.Items[1.000000];
+              __.acc = {Tag: 1.000000, Value: nextAcc};
+              __.current = value;
+              return true;
+            }
+            else
+            {
+              __.acc = {Tag: 0.000000};
+              __.current = null;
+              return false;
+            };
+          });
+          return (Option__IsSome$Tuple_2_IEnumerator_1_String__IEnumerator_1_String_Tuple_2_IEnumerator_1_String__IEnumerator_1_String_(__.acc) && (function ()
+          {
+            var _temp57902;
+            return next(_temp57902);
+          })());
+        })(impl, unitVar1);
+      }), get_Current1: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          return __.current;
+        })(impl, unitVar1);
+      }), Reset: (function (unitVar1)
+      {
+        return (function (__, unitVar1)
+        {
+          __.acc = {Tag: 1.000000, Value: __.seed};
+          __.current = null;
+        })(impl, unitVar1);
+      })};
+    }));
+  });
+  String_1_Join$ = (function (separator, s)
+  {
+    return s.join(separator);
+  });
+  Tag___ctor$ = (function (Name, Attributes, Content)
+  {
+    this.Name = Name;
+    this.Attributes = Attributes;
+    this.Content = Content;
+  });
+  Tag___ctor$.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = ((this.Name < that.Name) ? -1.000000 : ((this.Name == that.Name) ? 0.000000 : 1.000000));
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      __diff = this.Attributes.CompareTo(that.Attributes);
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        var ___diff = 0.000000;
+        ___diff = this.Content.CompareTo(that.Content);
+        diff = ___diff;
+        if ((diff != 0.000000)) 
+        {
+          return diff;
+        }
+        else
+        {
+          return 0.000000;
+        };
+      };
+    };
+  });
+  TupleFSharpFunc_2_AppState__Unit__FSharpFunc_2_String__Unit__FSharpFunc_2_String__Unit_ = (function (Item0, Item1, Item2)
+  {
+    this.Items = [Item0, Item1, Item2];
+    this.Items = [Item0, Item1, Item2];
+    this.Items = [Item0, Item1, Item2];
+  });
+  TupleFSharpFunc_2_AppState__Unit__FSharpFunc_2_String__Unit__FSharpFunc_2_String__Unit_.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = this.Items[0.000000].CompareTo(that.Items[0.000000]);
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      __diff = this.Items[1.000000].CompareTo(that.Items[1.000000]);
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        var ___diff = 0.000000;
+        ___diff = this.Items[2.000000].CompareTo(that.Items[2.000000]);
+        diff = ___diff;
+        if ((diff != 0.000000)) 
+        {
+          return diff;
+        }
+        else
+        {
+          return 0.000000;
+        };
+      };
+    };
+  });
+  TupleIEnumerable_1_String__IEnumerator_1_Tag_ = (function (Item0, Item1)
+  {
+    this.Items = [Item0, Item1];
+    this.Items = [Item0, Item1];
+  });
+  TupleIEnumerable_1_String__IEnumerator_1_Tag_.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = this.Items[0.000000].CompareTo(that.Items[0.000000]);
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      __diff = this.Items[1.000000].CompareTo(that.Items[1.000000]);
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        return 0.000000;
+      };
+    };
+  });
+  TupleIEnumerator_1_String__IEnumerator_1_String_ = (function (Item0, Item1)
+  {
+    this.Items = [Item0, Item1];
+    this.Items = [Item0, Item1];
+  });
+  TupleIEnumerator_1_String__IEnumerator_1_String_.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = this.Items[0.000000].CompareTo(that.Items[0.000000]);
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      __diff = this.Items[1.000000].CompareTo(that.Items[1.000000]);
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        return 0.000000;
+      };
+    };
+  });
+  TupleMapTree_2_String__String__MapTree_2_String__String_ = (function (Item0, Item1)
+  {
+    this.Items = [Item0, Item1];
+    this.Items = [Item0, Item1];
+  });
+  TupleMapTree_2_String__String__MapTree_2_String__String_.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = this.Items[0.000000].CompareTo(that.Items[0.000000]);
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      __diff = this.Items[1.000000].CompareTo(that.Items[1.000000]);
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        return 0.000000;
+      };
+    };
+  });
+  TupleString_FSharpOption_1_String_ = (function (Item0, Item1)
+  {
+    this.Items = [Item0, Item1];
+    this.Items = [Item0, Item1];
+  });
+  TupleString_FSharpOption_1_String_.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = ((this.Items[0.000000] < that.Items[0.000000]) ? -1.000000 : ((this.Items[0.000000] == that.Items[0.000000]) ? 0.000000 : 1.000000));
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      __diff = this.Items[1.000000].CompareTo(that.Items[1.000000]);
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        return 0.000000;
+      };
+    };
+  });
+  TupleString_IEnumerator_1_String_ = (function (Item0, Item1)
+  {
+    this.Items = [Item0, Item1];
+    this.Items = [Item0, Item1];
+  });
+  TupleString_IEnumerator_1_String_.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = ((this.Items[0.000000] < that.Items[0.000000]) ? -1.000000 : ((this.Items[0.000000] == that.Items[0.000000]) ? 0.000000 : 1.000000));
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      __diff = this.Items[1.000000].CompareTo(that.Items[1.000000]);
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        return 0.000000;
+      };
+    };
+  });
+  TupleString_IEnumerator_1_Tuple_2_String__String_ = (function (Item0, Item1)
+  {
+    this.Items = [Item0, Item1];
+    this.Items = [Item0, Item1];
+  });
+  TupleString_IEnumerator_1_Tuple_2_String__String_.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = ((this.Items[0.000000] < that.Items[0.000000]) ? -1.000000 : ((this.Items[0.000000] == that.Items[0.000000]) ? 0.000000 : 1.000000));
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      __diff = this.Items[1.000000].CompareTo(that.Items[1.000000]);
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        return 0.000000;
+      };
+    };
+  });
+  TupleString_String = (function (Item0, Item1)
+  {
+    this.Items = [Item0, Item1];
+    this.Items = [Item0, Item1];
+  });
+  TupleString_String.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = ((this.Items[0.000000] < that.Items[0.000000]) ? -1.000000 : ((this.Items[0.000000] == that.Items[0.000000]) ? 0.000000 : 1.000000));
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      __diff = ((this.Items[1.000000] < that.Items[1.000000]) ? -1.000000 : ((this.Items[1.000000] == that.Items[1.000000]) ? 0.000000 : 1.000000));
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        return 0.000000;
+      };
+    };
+  });
+  TupleString_Tuple_2_IEnumerator_1_String__IEnumerator_1_String_ = (function (Item0, Item1)
+  {
+    this.Items = [Item0, Item1];
+    this.Items = [Item0, Item1];
+  });
+  TupleString_Tuple_2_IEnumerator_1_String__IEnumerator_1_String_.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = ((this.Items[0.000000] < that.Items[0.000000]) ? -1.000000 : ((this.Items[0.000000] == that.Items[0.000000]) ? 0.000000 : 1.000000));
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      __diff = this.Items[1.000000].CompareTo(that.Items[1.000000]);
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        return 0.000000;
+      };
+    };
+  });
+  TupleTag__Int32 = (function (Item0, Item1)
+  {
+    this.Items = [Item0, Item1];
+    this.Items = [Item0, Item1];
+  });
+  TupleTag__Int32.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = this.Items[0.000000].CompareTo(that.Items[0.000000]);
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      __diff = ((this.Items[1.000000] < that.Items[1.000000]) ? -1.000000 : ((this.Items[1.000000] == that.Items[1.000000]) ? 0.000000 : 1.000000));
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        return 0.000000;
+      };
+    };
+  });
+  TupleTuple_2_String__String__IEnumerator_1_KeyValuePair_2_String__String_ = (function (Item0, Item1)
+  {
+    this.Items = [Item0, Item1];
+    this.Items = [Item0, Item1];
+  });
+  TupleTuple_2_String__String__IEnumerator_1_KeyValuePair_2_String__String_.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = this.Items[0.000000].CompareTo(that.Items[0.000000]);
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      __diff = this.Items[1.000000].CompareTo(that.Items[1.000000]);
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        return 0.000000;
+      };
+    };
+  });
+  UnfoldEnumerator_2_Boolean__String___ctor$Boolean_String = (function (seed, unfold)
+  {
+    this.seed = seed;
+    this.unfold = unfold;
+    this.acc = {Tag: 1.000000, Value: this.seed};
+    this.current = null;
+  });
+  UnfoldEnumerator_2_FSharpOption_1_String__String___ctor$FSharpOption_1_String__String = (function (seed, unfold)
+  {
+    this.seed = seed;
+    this.unfold = unfold;
+    this.acc = {Tag: 1.000000, Value: this.seed};
+    this.current = null;
+  });
+  UnfoldEnumerator_2_IEnumerator_1_KeyValuePair_2_String__String__Tuple_2_String__String___ctor$IEnumerator_1_KeyValuePair_2_String__String__Tuple_2_String__String_ = (function (seed, unfold)
+  {
+    this.seed = seed;
+    this.unfold = unfold;
+    this.acc = {Tag: 1.000000, Value: this.seed};
+    this.current = null;
+  });
+  UnfoldEnumerator_2_IEnumerator_1_String__String___ctor$IEnumerator_1_String__String = (function (seed, unfold)
+  {
+    this.seed = seed;
+    this.unfold = unfold;
+    this.acc = {Tag: 1.000000, Value: this.seed};
+    this.current = null;
+  });
+  UnfoldEnumerator_2_IEnumerator_1_Tag__IEnumerable_1_String___ctor$IEnumerator_1_Tag__IEnumerable_1_String_ = (function (seed, unfold)
+  {
+    this.seed = seed;
+    this.unfold = unfold;
+    this.acc = {Tag: 1.000000, Value: this.seed};
+    this.current = null;
+  });
+  UnfoldEnumerator_2_IEnumerator_1_Tuple_2_String__String__String___ctor$IEnumerator_1_Tuple_2_String__String__String = (function (seed, unfold)
+  {
+    this.seed = seed;
+    this.unfold = unfold;
+    this.acc = {Tag: 1.000000, Value: this.seed};
+    this.current = null;
+  });
+  UnfoldEnumerator_2_Int32__Tag___ctor$Int32_Tag_ = (function (seed, unfold)
+  {
+    this.seed = seed;
+    this.unfold = unfold;
+    this.acc = {Tag: 1.000000, Value: this.seed};
+    this.current = null;
+  });
+  UnfoldEnumerator_2_Tuple_2_IEnumerator_1_String__IEnumerator_1_String__String___ctor$Tuple_2_IEnumerator_1_String__IEnumerator_1_String__String = (function (seed, unfold)
+  {
+    this.seed = seed;
+    this.unfold = unfold;
+    this.acc = {Tag: 1.000000, Value: this.seed};
+    this.current = null;
+  });
+  list_1_MapTree_2_String__String__ConsMapTree_2_String__String_ = (function (Item1, Item2)
+  {
+    this.Tag = 1.000000;
+    this._CaseName = "Cons";
+    this.Item1 = Item1;
+    this.Item2 = Item2;
+  });
+  list_1_MapTree_2_String__String__ConsMapTree_2_String__String_.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = ((this.Tag < that.Tag) ? -1.000000 : ((this.Tag == that.Tag) ? 0.000000 : 1.000000));
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      var __diff = 0.000000;
+      __diff = this.Item1.CompareTo(that.Item1);
+      diff = __diff;
+      if ((diff != 0.000000)) 
+      {
+        return diff;
+      }
+      else
+      {
+        var ___diff = 0.000000;
+        ___diff = this.Item2.CompareTo(that.Item2);
+        diff = ___diff;
+        if ((diff != 0.000000)) 
+        {
+          return diff;
+        }
+        else
+        {
+          return 0.000000;
+        };
+      };
+    };
+  });
+  list_1_MapTree_2_String__String__NilMapTree_2_String__String_ = (function ()
+  {
+    this.Tag = 0.000000;
+    this._CaseName = "Nil";
+  });
+  list_1_MapTree_2_String__String__NilMapTree_2_String__String_.prototype.CompareTo = (function (that)
+  {
+    var diff = 0.000000;
+    var _diff = 0.000000;
+    _diff = ((this.Tag < that.Tag) ? -1.000000 : ((this.Tag == that.Tag) ? 0.000000 : 1.000000));
+    diff = _diff;
+    if ((diff != 0.000000)) 
+    {
+      return diff;
+    }
+    else
+    {
+      return 0.000000;
+    };
+  });
+  mkIEnumerator__2_String__String___ctor$String_String = (function (s)
+  {
+    this.s = s;
+    this.i = {contents: MapTreeModule__mkIterator$String__String_String_String(this.s)};
+  });
+  Html__i = Html__get_i$();
+  Icons__Play = Icons__get_Play$();
+  Html__span = Html__get_span$();
+  Html__a = Html__get_a$();
+  Button__normal = Button__get_normal$();
+  Button__success = Button__get_success$();
+  Icons__InfoSign = Icons__get_InfoSign$();
+  Button__info = Button__get_info$();
+  Icons__Eject = Icons__get_Eject$();
+  Button__danger = Button__get_danger$();
+  Html__div = Html__get_div$();
+  Html__p = Html__get_p$();
+  Button__primary = Button__get_primary$();
+  Container__row = Container__get_row$();
+  Application__main$()
+});</script>
   </body>
 </html>

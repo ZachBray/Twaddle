@@ -1,41 +1,48 @@
-﻿module Twaddler.Page.Index
+﻿[<FunScript.JS>]
+module Twaddler.Page.Index
 
 open DOM
 open Html
 open Bootstrap
+open Scripting
+open Twaddler
 
-let create() = [
+let playId() = "play-id"
+
+let createPage() = [|
     Container.offsetSpan 4 8
-    |> addKids [
+    |> addKids [|
         Button.success 
-        |> addAttrs [
-            "href" <== "game.html"
-        ]
-        |> addKids [
+        |> addId playId
+        |> addKids [|
             Icons.Play |> Icon.makeWhite
             span |> addRaw "Play"
-        ]
+        |]
         |> Button.makeLarge
         |> Button.makeBlock
 
         Button.info
-        |> addAttrs [
-            "href" <== "highscores.html"
-        ]
-        |> addKids [
+        |> addKids [|
             Icons.InfoSign |> Icon.makeWhite
             span |> addRaw "High Scores"
-        ]
+        |]
         |> Button.makeLarge
         |> Button.makeBlock
 
         Button.danger
-        |> addKids [
+        |> addKids [|
             Icons.Eject |> Icon.makeWhite
             span |> addRaw "Exit"
-        ]
+        |]
         |> Button.makeLarge
         |> Button.makeBlock
-    ]
-]
+    |]
+|]
 
+let next() =
+    AppState(
+        createPage(),
+        fun () ->
+            Async.FromContinuations(fun (onNext, _, _) ->
+                playId |> onClick (fun () -> onNext(Twaddler.Page.Game.next()))
+            ))

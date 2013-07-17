@@ -1,3 +1,4 @@
+[<FunScript.JS>]
 module Bootstrap.Icons
 
 open DOM

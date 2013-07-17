@@ -203,6 +203,18 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FunScript.Arrays.Extensions">
+
+</member>
 <member name="T:FunScript.Arrays">
 
 </member>
@@ -431,6 +443,9 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
 <member name="M:FunScript.CompilerComponent.splitDeclarationFromUsageIfNeeded(FunScript.InternalCompiler.ICompiler,Microsoft.FSharp.Quotations.FSharpExpr)">
 <summary>
  This is to cope with nested stuff that is supported in F#
@@ -456,6 +471,9 @@
 
 </member>
 <member name="T:FunScript.ControlFlow">
+
+</member>
+<member name="">
 
 </member>
 <member name="">
@@ -1598,6 +1616,126 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FunScript.Core.Newtonsoft">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="T:FunScript.Core.Option">
 
 </member>
@@ -2465,6 +2603,69 @@
 <member name="">
 
 </member>
+<member name="T:FunScript.Core.StringWriter">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="">
 
 </member>
@@ -2573,6 +2774,12 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="T:FunScript.Expr">
 
 </member>
@@ -2622,9 +2829,6 @@
 
 </member>
 <member name="T:FunScript.ExpressionReplacer">
-
-</member>
-<member name="">
 
 </member>
 <member name="">
@@ -2837,6 +3041,9 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
 <member name="T:FunScript.Logic">
 
 </member>
@@ -2883,6 +3090,12 @@
 
 </member>
 <member name="T:FunScript.Options">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FunScript.OtherMappings">
 
 </member>
 <member name="">
@@ -3053,6 +3266,15 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="M:FunScript.Reflection.isPrimitive(System.Type)">
 <summary>
  For generic specialization. 
@@ -3104,6 +3326,9 @@
 
 </member>
 <member name="T:FunScript.Strings">
+
+</member>
+<member name="">
 
 </member>
 <member name="">

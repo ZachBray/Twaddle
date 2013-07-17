@@ -2,54 +2,58 @@
 
 open DOM
 open Html
+open FunScript
 
+[<JS>]
 module Document =
-    let create path name head content =
+    let create name head content =
         {
-            Path = path
             Header = 
-                [
+                [|
                     yield title name
-                    yield meta |> addAttrs [
+                    yield meta |> addAttrs [|
                         "name" <== "viewport"
                         "content" <== "width=device-width, initial-scale=1.0"
-                    ]
-                    yield link |> addAttrs [
+                    |]
+                    yield link |> addAttrs [|
                         "href" <== "css/bootstrap.min.css" 
                         "rel" <== "stylesheet" 
                         "media" <== "screen"
-                    ]
-                    yield link |> addAttrs [
+                    |]
+                    yield link |> addAttrs [|
                         "href" <== "css/bootstrap-responsive.min.css" 
                         "rel" <== "stylesheet" 
                         "media" <== "screen"
-                    ]
+                    |]
                     yield! head
-                ]
+                |]
             Body =
-                [
-                    yield script |> addAttrs [
+                [|
+                    yield script |> addAttrs [|
                         "src" <== "js/jquery.min.js"
-                    ]
-                    yield script |> addAttrs [
+                    |]
+                    yield script |> addAttrs [|
                         "src" <== "js/bootstrap.min.js"
-                    ]
+                    |]
                     yield! content
-                ]
+                |]
         }
-
+        
+[<JS>]
 module Container =
     let row = div |> addClass "row"
-    let span n = div |> addClass (sprintf "span%i" n)
-    let offsetSpan i n = span n |> addClass (sprintf "offset%i" i)
+    let span n = div |> addClass ("span" + n.ToString())
+    let offsetSpan i n = span n |> addClass ("offset" + i.ToString())
 
     let hero = div |> addClass "hero-unit"
-
+    
+[<JS>]
 module Text =
     let left p = p |> addClass "text-left" 
     let center p = p |> addClass "text-center" 
     let right p = p |> addClass "text-right" 
-
+    
+[<JS>]
 module Button =
     let normal = a |> addClass "btn"
     let primary = normal |> addClass "btn-primary"
@@ -66,6 +70,6 @@ module Button =
     let makeDisabled btn = btn |> addClass "disabled"
     let makeBlock btn = btn |> addClass "btn-block"
 
-
+[<JS>]
 module Icon =
     let makeWhite i = i |> addClass "icon-white"
