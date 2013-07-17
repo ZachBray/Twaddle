@@ -17,3 +17,6 @@ let setHtml (value : string) tagId =
 
 let onClick f tagId =
     JS.``$``.Invoke("#" + (tagId())).click(fun _ -> f(); ()) |> ignore
+
+let addClass (c : string) tagId =
+    JS.``$``.Invoke("#" + (tagId())).addClass(c) |> ignore

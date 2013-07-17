@@ -9,40 +9,39 @@ open Twaddler
 open FunScript
 open FunScript.TypeScript
 
-let definitionId() = "def-id"
-let word1Id() = "word1-id"
-let word2Id() = "word2-id"
-let word3Id() = "word3-id"
-
-let createPage def w1 w2 w3 = [|
-    Container.row
-    |> addKids [|
-        Scrabble.tiles "Pick the word"
-        |> Style.title
-    |]
-
-    Container.row |> addKids [|
-        Container.offsetSpan 2 8 |> addKids [|
-            Container.hero |> addKids [|
-                p |> addRaw def
-                p |> addKids [|
-                    Button.primary |> addRaw w1 |> addId word1Id
-                    |> addAttrs [| "href" <== "#" |] |> Button.makeLarge //|> Button.makeBlock
-                    Button.primary |> addRaw w2 |> addId word2Id
-                    |> addAttrs [| "href" <== "#" |] |> Button.makeLarge //|> Button.makeBlock
-                    Button.primary |> addRaw w3 |> addId word3Id
-                    |> addAttrs [| "href" <== "#" |] |> Button.makeLarge //|> Button.makeBlock
-                |]
-            |]
-        |]
-    |]
-|]
+let definitionId() = "definition-block"
+let wordId i () = "word-" + i.ToString()
 
 [<JSEmit("return words;")>]
 let getWords() : string[] = failwith "never"
 
 [<JSEmit("return definitions;")>]
 let getDefinitions() : string[] = failwith "never"
+
+let createPage def options =
+    let words = getWords()
+    [|
+        Container.row
+        |> addKids [|
+            Scrabble.tiles "Pick the word"
+            |> Style.title
+        |]
+
+        Container.row |> addKids [|
+            Container.offsetSpan 2 8 |> addKids [|
+                Container.hero |> addKids [|
+                    p |> addRaw def
+                    p |> addKids (
+                        options |> Array.map (fun i ->
+                            Button.primary |> addRaw words.[i] |> addId (wordId i)
+                            |> addAttrs [| "href" <== "#" |] |> Button.makeLarge //|> Button.makeBlock
+                        ))
+                |]
+            |]
+        |]
+    |]
+
+
 
 let randomInt (exclusiveUpper : int) =
     JS.Math.floor(JS.Math.random() * float exclusiveUpper)
@@ -52,15 +51,33 @@ let rec next() =
     let words = getWords()
     let definitions = getDefinitions()
     let i = randomInt words.Length
-    let j = (randomInt 10 + i) % words.Length
-    let k = if i = j then j + 1 else j
-    let k = (randomInt 10 + i) % words.Length
-    let k = if j = k then k + 1 else k
+    let realIndex = i
+    let rec pickNext picked k =
+        let j = (randomInt(10 + k) - 5 + i + words.Length) % words.Length 
+        let word = words.[j]
+        let usedAlready = picked |> Array.exists ((=) word)
+        if usedAlready then pickNext picked (k+1)
+        else j
+    let j = pickNext [|words.[i]|] 0
+    let k = pickNext [|words.[i]; words.[j]|] 0
+    let options = [|i; j; k|] |> Array.sortBy (fun _ -> randomInt 10)
     AppState(
-        createPage definitions.[i] words.[i] words.[j] words.[k],
+        createPage definitions.[i] options,
         fun () ->
             Async.FromContinuations(fun (onNext, _, _) ->
-                word1Id |> onClick (fun () -> onNext(next()))
-                word2Id |> onClick (fun () -> onNext(next()))
-                word3Id |> onClick (fun () -> onNext(next()))
+                options |> Array.iter (fun i ->
+                    wordId i |> onClick (fun () -> 
+                        async {
+                            if i = realIndex then
+                                wordId i |> addClass "btn-success"
+                                wordId i |> addClass "animated"
+                                wordId i |> addClass "tada"
+                            else
+                                wordId realIndex |> addClass "btn-info"
+                                wordId i |> addClass "btn-danger"
+                                wordId i |> addClass "animated"
+                                wordId i |> addClass "wobble"
+                            do! Async.Sleep 800
+                            onNext(next())
+                        } |> Async.StartImmediate))
             ))

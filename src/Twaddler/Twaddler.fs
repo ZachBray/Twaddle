@@ -43,3 +43,7 @@ module Scrabble =
 [<JS>]
 module Style =
     let title tag = tag |> addClass "app-title"
+
+[<JS>]
+module Animate =
+    let tada tag = tag |> addClass "tada"
