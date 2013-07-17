@@ -19,7 +19,7 @@ body {
 
 .cs-text span[class^="word"] {
 	display: inline-block;
-	margin: 0 8px;
+	margin: 2px 4px;
 
 }
 
@@ -33,7 +33,7 @@ body {
 	font-size: 18px;
 	font-weight: 100;
 	line-height: 32px;
-	margin: 3px 1px;
+	margin: 2px -2px;
 	text-align: center;
 	cursor: default;
 	font-family: Arial, sans-serif;
