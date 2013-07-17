@@ -28,16 +28,22 @@ let createPage def options =
         |]
 
         Container.row |> addKids [|
-            Container.offsetSpan 2 8 |> addKids [|
-                Container.hero |> addKids [|
-                    p |> addRaw def
-                    p |> addKids (
-                        options |> Array.map (fun i ->
-                            Button.primary |> addRaw words.[i] |> addId (wordId i)
-                            |> addAttrs [| "href" <== "#" |] |> Button.makeLarge //|> Button.makeBlock
-                        ))
-                |]
+            Container.span 12 |> addKids [|
+                Button.inverse 
+                |> addRaw def
+                |> Button.makeDisabled 
+                |> Button.makeLarge 
+                |> Button.makeBlock
+                |> Style.definition
             |]
+        |]
+
+        Container.row |> addKids [|
+            Container.span 12 |> addKids (
+                options |> Array.map (fun i ->
+                    Button.normal |> addRaw words.[i] |> addId (wordId i)
+                    |> addAttrs [| "href" <== "#" |] |> Button.makeLarge |> Button.makeBlock
+                ))
         |]
     |]
 

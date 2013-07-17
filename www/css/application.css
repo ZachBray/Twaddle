@@ -9,6 +9,11 @@ body {
     margin-bottom: 24px;
 }
 
+.word-definition {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
 .cs-text {
     text-align: center;
 }

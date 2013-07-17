@@ -43,6 +43,7 @@ module Scrabble =
 [<JS>]
 module Style =
     let title tag = tag |> addClass "app-title"
+    let definition tag = tag |> addClass "word-definition"
 
 [<JS>]
 module Animate =
