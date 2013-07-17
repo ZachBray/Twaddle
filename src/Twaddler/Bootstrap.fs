@@ -25,6 +25,11 @@ module Document =
                         "rel" <== "stylesheet" 
                         "media" <== "screen"
                     |]
+//                    yield link |> addAttrs [|
+//                        "href" <== "css/bootstrap-overrides.css" 
+//                        "rel" <== "stylesheet" 
+//                        "media" <== "screen"
+//                    |]
                     yield! head
                 |]
             Body =

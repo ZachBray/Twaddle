@@ -1,0 +1,64 @@
+body {
+  background: #17ac1d;
+  background-image: url("../img/green-fabric-1.png"), url("../img/green-fabric-2.png");
+  background-repeat: repeat-x, repeat;
+}
+
+.app-title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.cs-text {
+    text-align: center;
+}
+
+.cs-text sub {
+	font-size: 9px;
+}
+
+.cs-text span[class^="word"] {
+	display: inline-block;
+	margin: 0 15px;
+
+}
+
+.cs-text span[class^="char"] {
+	width: 70px;
+	height: 70px;
+	display: inline-block;
+	background: #e4d095;
+	color: #2a1f1b;
+	border-radius: 3px;
+	font-size: 42px;
+	font-weight: 400;
+	line-height: 66px;
+	margin: 6px 2px;
+	text-align: center;
+	cursor: default;
+	font-family: Arial, sans-serif;
+	text-shadow: 
+		1px 1px 1px rgba(255, 255, 255, 0.9), 
+		0 -1px 1px rgba(255,255,255,0.2);
+	box-shadow: 
+		1px 7px 15px rgba(0,0,0,0.8),
+		inset 3px 0 2px rgba(255,255,255,0.4),
+		inset 0 3px 0px rgba(255,255,255,0.5),
+		inset -2px -3px 0px rgba(143,128,82,0.6);
+}
+
+.cs-text span[class^="char"]:nth-child(odd) {
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
+.cs-text span[class^="char"]:nth-child(3n) {
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}

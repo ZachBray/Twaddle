@@ -27,6 +27,7 @@ module Html =
     let button = tag "button"
     let script = tag "script"
     let span = tag "span"
+    let sub = tag "sub"
     let title name = { tag "title" with Content = Raw name }
     let link = { tag "link" with Content = CannotHaveContent }
     let meta = { tag "meta" with Content = CannotHaveContent }

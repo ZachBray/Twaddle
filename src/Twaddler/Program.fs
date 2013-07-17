@@ -46,6 +46,11 @@ let compilePage() =
     let appPage = 
         Bootstrap.Document.create "Twaddler" 
             [|
+                link |> addAttrs [|
+                    "href" <== "css/application.css" 
+                    "rel" <== "stylesheet" 
+                    "media" <== "screen"
+                |]
                 script |> addAttrs [|
                     "src" <== "js/dictionary.js"
                 |]

@@ -35,7 +35,16 @@ let buildDictionary() =
         File.Delete outputPath
     use file = new StreamWriter(outputPath)
     fprintfn file "var words = ["
-    let definitions = lines |> Seq.choose parseLine |> Seq.cache
+    let definitions = 
+        lines 
+        |> Seq.choose parseLine 
+        |> Seq.choose (fun (word, t, def) ->
+            let word = word.Replace("_", " ")
+            let words = word.Split[|' '|]
+            let isRecursive = words |> Array.exists def.Contains
+            if isRecursive then None
+            else Some (word, t, def))
+        |> Seq.cache
     for word, t, def in definitions do
         fprintfn file "\"%s\"," word
     fprintfn file "];"

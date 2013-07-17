@@ -14,20 +14,25 @@ let word1Id() = "word1-id"
 let word2Id() = "word2-id"
 let word3Id() = "word3-id"
 
-let createPage() = [|
+let createPage def w1 w2 w3 = [|
+    Container.row
+    |> addKids [|
+        Scrabble.tiles "Pick the word"
+        |> Style.title
+    |]
+
     Container.row |> addKids [|
         Container.offsetSpan 2 8 |> addKids [|
-            h 3 |> addRaw "Pick-a-word"
-            p 
-            |> addId definitionId
-            |> addRaw "Definition of some word goes here"
-            p |> addKids [|
-                Button.primary |> addRaw "Word1" |> addId word1Id
-                |> addAttrs [| "href" <== "#" |] |> Button.makeBlock
-                Button.primary |> addRaw "Word2" |> addId word2Id
-                |> addAttrs [| "href" <== "#" |] |> Button.makeBlock
-                Button.primary |> addRaw "Word3" |> addId word3Id
-                |> addAttrs [| "href" <== "#" |] |> Button.makeBlock
+            Container.hero |> addKids [|
+                p |> addRaw def
+                p |> addKids [|
+                    Button.primary |> addRaw w1 |> addId word1Id
+                    |> addAttrs [| "href" <== "#" |] |> Button.makeLarge //|> Button.makeBlock
+                    Button.primary |> addRaw w2 |> addId word2Id
+                    |> addAttrs [| "href" <== "#" |] |> Button.makeLarge //|> Button.makeBlock
+                    Button.primary |> addRaw w3 |> addId word3Id
+                    |> addAttrs [| "href" <== "#" |] |> Button.makeLarge //|> Button.makeBlock
+                |]
             |]
         |]
     |]
@@ -52,12 +57,8 @@ let rec next() =
     let k = (randomInt 10 + i) % words.Length
     let k = if j = k then k + 1 else k
     AppState(
-        createPage(),
+        createPage definitions.[i] words.[i] words.[j] words.[k],
         fun () ->
-            definitionId |> setText definitions.[i]
-            word1Id |> setText words.[i]
-            word2Id |> setText words.[j]
-            word3Id |> setText words.[k]
             Async.FromContinuations(fun (onNext, _, _) ->
                 word1Id |> onClick (fun () -> onNext(next()))
                 word2Id |> onClick (fun () -> onNext(next()))
