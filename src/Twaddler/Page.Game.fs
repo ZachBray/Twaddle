@@ -12,12 +12,6 @@ open FunScript.TypeScript
 let definitionId() = "definition-block"
 let wordId i () = "word-" + i.ToString()
 
-[<JSEmit("return words;")>]
-let getWords() : string[] = failwith "never"
-
-[<JSEmit("return definitions;")>]
-let getDefinitions() : string[] = failwith "never"
-
 let createPage def options livesLeft score =
     let words = getWords()
     [|
@@ -79,10 +73,23 @@ let randomInt (exclusiveUpper : int) =
     JS.Math.floor(JS.Math.random() * float exclusiveUpper)
     |> int
 
+let withRatio fNum gNum f g =
+    let threshold = fNum
+    let i = randomInt(fNum + gNum)
+    if i < fNum then f()
+    else g()
+
 let rec next goHome livesLeft score =
     let words = getWords()
     let definitions = getDefinitions()
-    let i = randomInt words.Length
+    let i, isTroublesome = 
+        withRatio 70 30
+            (fun () -> randomInt words.Length, false)
+            (fun () -> 
+                let troublesomeWords = Statistics.getTroublesomeWords()
+                let l = troublesomeWords.Length
+                if l > 0 then troublesomeWords.[randomInt l], true
+                else randomInt words.Length, false)
     let realIndex = i
     let rec pickNext picked k =
         let j = (randomInt(10 + k) - 5 + i + words.Length) % words.Length 
@@ -107,17 +114,23 @@ let rec next goHome livesLeft score =
                                     wordId i |> appendClass "tada"
                                     let word = words.[i]
                                     let points = Scrabble.getWordScore word
+                                    if isTroublesome then
+                                        withRatio 80 20 ignore (fun () -> 
+                                            Statistics.removeTroublesomeWord i)
                                     livesLeft, points
                                 else
                                     wordId realIndex |> appendClass "btn-info"
                                     wordId i |> appendClass "btn-danger"
                                     wordId i |> appendClass "animated"
                                     wordId i |> appendClass "wobble"
+                                    Statistics.addTroublesomeWord i
                                     livesLeft - 1, 0
                             do! Async.Sleep 800
                             if livesLeft = 0 then
+                                let oldSnap = Statistics.takeSnapshot()
                                 Statistics.addScore score
-                                onNext(goHome())
+                                let newSnap = Statistics.takeSnapshot()
+                                onNext(Stats.next(oldSnap, newSnap, goHome))
                             else
                                 onNext(next goHome livesLeft (score + points))
                         } |> Async.StartImmediate))

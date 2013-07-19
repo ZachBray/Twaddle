@@ -51,8 +51,13 @@ module Container =
     let row = div |> addClass "row"
     let span n = div |> addClass ("span" + n.ToString())
     let offsetSpan i n = span n |> addClass ("offset" + i.ToString())
-
     let hero = div |> addClass "hero-unit"
+    let table = table |> addClass "table"
+
+[<JS>]
+module Table =
+    module Classes =
+        let bordered = "table-bordered"
     
 [<JS>]
 module Text =

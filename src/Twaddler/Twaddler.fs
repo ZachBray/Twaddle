@@ -7,6 +7,14 @@ open Html
 [<JS>]
 type AppState = AppState of Tag[] * (unit -> AppState Async)
 
+[<JS; AutoOpen>]
+module EnglishDictionary =
+    [<JSEmit("return words;")>]
+    let getWords() : string[] = failwith "never"
+
+    [<JSEmit("return definitions;")>]
+    let getDefinitions() : string[] = failwith "never"
+
 [<JS>]
 module Scrabble =
 
@@ -51,6 +59,7 @@ module Style =
     let title = "app-title"
     let definition = "word-definition"
     let menu = "menu-area"
+    let statsTable = "stats-table"
 
 [<JS>]
 module Animate =
@@ -62,9 +71,7 @@ module Statistics =
 
     let mutable isLoaded = false
     let mutable gameScores = [||] : int []
-    let mutable troublesomeWordsGen2 = [||] : int []
-    let mutable troublesomeWordsGen1 = [||] : int []
-    let mutable troublesomeWordsGen0 = [||] : int []
+    let mutable troublesomeWords = [||] : int []
 
     let ensureLoaded() =
         if not isLoaded then
@@ -72,17 +79,58 @@ module Statistics =
             | Some storedScores ->
                 gameScores <- storedScores |> parse<int []>
             | None -> ()
+            match tryFindItem "troublesomeWords" with
+            | Some storedWords ->
+                troublesomeWords <- storedWords |> parse<int []>
+            | None -> ()
             isLoaded <- true
+
+    let save() =
+        stringify gameScores 
+        |> addItem "gameScores"
+        stringify troublesomeWords
+        |> addItem "troublesomeWords"
+
+    let addTroublesomeWord i =
+        ensureLoaded()
+        troublesomeWords <- Array.append [|i|] troublesomeWords
+        save()
+
+    let removeTroublesomeWord i =
+        ensureLoaded()
+        troublesomeWords <- troublesomeWords |> Array.filter((<>) i)
+        save()
+
+    let getTroublesomeWords() =
+        ensureLoaded()
+        troublesomeWords
 
     let calcHighScore() = 
         ensureLoaded()
         if gameScores.Length = 0 then 0
         else gameScores |> Array.max
 
-    let save() =
-        stringify gameScores 
-        |> addItem "gameScores"
+    let calcAverageScore() = 
+        ensureLoaded()
+        if gameScores.Length = 0 then 0.0
+        else Scripting.JS.Math.floor(gameScores |> Array.averageBy float)
 
     let addScore score =
+        ensureLoaded()
         gameScores <- Array.append [|score|] gameScores
         save()
+
+    let getGamesPlayed() =
+        ensureLoaded()
+        gameScores.Length
+
+
+    type Snapshot =
+        { GamesPlayed : int
+          HighScore : int
+          AverageScore : float }
+
+    let takeSnapshot() =    
+        { GamesPlayed = getGamesPlayed()
+          HighScore = calcHighScore()
+          AverageScore = calcAverageScore() } 

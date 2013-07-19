@@ -23,6 +23,9 @@ module Html =
         }
 
     let div = tag "div"
+    let table = tag "table"
+    let tableRow = tag "tr"
+    let tableCell = tag "td"
     let a = tag "a"
     let button = tag "button"
     let script = tag "script"

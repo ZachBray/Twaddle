@@ -9,6 +9,7 @@ open Twaddler
 
 let playId() = "play"
 let howItWorksId() = "how-it-works"
+let statsId() = "stats"
 
 let createPage() = [|
     
@@ -57,9 +58,10 @@ let createPage() = [|
             |> Button.makeBlock
 
             Button.info
+            |> addId statsId
             |> addKids [|
                 Icons.Tasks |> Icon.makeWhite
-                span |> addRaw "Stats"
+                span |> addRaw "Statistics"
             |]
             |> Button.makeLarge
             |> Button.makeBlock
@@ -75,4 +77,7 @@ let rec next() =
             Async.FromContinuations(fun (onNext, _, _) ->
                 playId |> onClick (fun () -> onNext(Twaddler.Page.Game.next next 3 0))
                 howItWorksId |> onClick (fun () -> onNext(Twaddler.Page.HowItWorks.next next))
+                statsId |> onClick (fun () -> 
+                    let snapshot = Statistics.takeSnapshot()
+                    onNext(Twaddler.Page.Stats.next(snapshot, snapshot, next)))
             ))

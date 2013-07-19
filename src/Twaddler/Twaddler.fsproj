@@ -62,6 +62,7 @@
     <Compile Include="Bootstrap.Icons.fs" />
     <Compile Include="Scripting.fs" />
     <Compile Include="Twaddler.fs" />
+    <Compile Include="Page.Stats.fs" />
     <Compile Include="Page.Game.fs" />
     <Compile Include="Page.HowItWorks.fs" />
     <Compile Include="Page.Index.fs" />
