@@ -40,7 +40,9 @@ module Document =
                     yield script |> addAttrs [|
                         "src" <== "js/bootstrap.min.js"
                     |]
-                    yield! content
+                    yield div 
+                          |> addClass "container"
+                          |> addKids content
                 |]
         }
         
@@ -75,6 +77,32 @@ module Button =
     let makeDisabled btn = btn |> addClass "disabled"
     let makeBlock btn = btn |> addClass "btn-block"
 
+[<JS>] 
+module Badge =
+    let normal = span |> addClass "badge"
+
+    module Class =
+        let success = "badge-success"
+        let warning = "badge-warning"
+        let important = "badge-important"
+        let info = "badge-info"
+        let inverse = "badge-inverse"
+
+[<JS>] 
+module Label =
+    let normal = span |> addClass "label"
+
+    module Class =
+        let success = "label-success"
+        let warning = "label-warning"
+        let important = "label-important"
+        let info = "label-info"
+        let inverse = "label-inverse"
+
 [<JS>]
 module Icon =
     let makeWhite i = i |> addClass "icon-white"
+
+[<JS>]
+module Alignment =
+    let pullRight = "pull-right"

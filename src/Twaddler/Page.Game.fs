@@ -18,28 +18,54 @@ let getWords() : string[] = failwith "never"
 [<JSEmit("return definitions;")>]
 let getDefinitions() : string[] = failwith "never"
 
-let createPage def options =
+let createPage def options livesLeft score =
     let words = getWords()
     [|
         Container.row
         |> addKids [|
-            Scrabble.tiles "Pick the word"
-            |> Style.title
+            div |> addKids [|
+                Scrabble.tiles "Pick The"
+                Scrabble.tiles "Word"
+            |]
+            |> addClass Style.title
+        |]
+
+        Container.row
+        |> addKids [|
+            Container.offsetSpan 2 8
+            |> addKids [|
+                Label.normal 
+                |> addClass Label.Class.important
+                |> addKids [|
+                    yield span |> addRaw "Lives:"
+                    for i = 1 to livesLeft do
+                        yield Icons.Heart |> Icon.makeWhite 
+                |]
+
+                Label.normal
+                |> addClass Label.Class.warning
+                |> addClass Alignment.pullRight
+                |> addKids [|
+                    span |> addRaw "Score:"
+                    span |> addRaw (score.ToString())
+                    Icons.Star |> Icon.makeWhite
+                |]
+            |]
         |]
 
         Container.row |> addKids [|
-            Container.span 12 |> addKids [|
+            Container.offsetSpan 2 8 |> addKids [|
                 Button.inverse 
                 |> addRaw def
                 |> Button.makeDisabled 
                 |> Button.makeLarge 
                 |> Button.makeBlock
-                |> Style.definition
+                |> addClass Style.definition
             |]
         |]
 
         Container.row |> addKids [|
-            Container.span 12 |> addKids (
+            Container.offsetSpan 2 8  |> addKids (
                 options |> Array.map (fun i ->
                     Button.normal |> addRaw words.[i] |> addId (wordId i)
                     |> addAttrs [| "href" <== "#" |] |> Button.makeLarge |> Button.makeBlock
@@ -53,7 +79,7 @@ let randomInt (exclusiveUpper : int) =
     JS.Math.floor(JS.Math.random() * float exclusiveUpper)
     |> int
 
-let rec next() =
+let rec next goHome livesLeft score =
     let words = getWords()
     let definitions = getDefinitions()
     let i = randomInt words.Length
@@ -68,22 +94,31 @@ let rec next() =
     let k = pickNext [|words.[i]; words.[j]|] 0
     let options = [|i; j; k|] |> Array.sortBy (fun _ -> randomInt 10)
     AppState(
-        createPage definitions.[i] options,
+        createPage definitions.[i] options livesLeft score,
         fun () ->
             Async.FromContinuations(fun (onNext, _, _) ->
                 options |> Array.iter (fun i ->
                     wordId i |> onClick (fun () -> 
                         async {
-                            if i = realIndex then
-                                wordId i |> addClass "btn-success"
-                                wordId i |> addClass "animated"
-                                wordId i |> addClass "tada"
-                            else
-                                wordId realIndex |> addClass "btn-info"
-                                wordId i |> addClass "btn-danger"
-                                wordId i |> addClass "animated"
-                                wordId i |> addClass "wobble"
+                            let livesLeft, points =
+                                if i = realIndex then
+                                    wordId i |> appendClass "btn-success"
+                                    wordId i |> appendClass "animated"
+                                    wordId i |> appendClass "tada"
+                                    let word = words.[i]
+                                    let points = Scrabble.getWordScore word
+                                    livesLeft, points
+                                else
+                                    wordId realIndex |> appendClass "btn-info"
+                                    wordId i |> appendClass "btn-danger"
+                                    wordId i |> appendClass "animated"
+                                    wordId i |> appendClass "wobble"
+                                    livesLeft - 1, 0
                             do! Async.Sleep 800
-                            onNext(next())
+                            if livesLeft = 0 then
+                                Statistics.addScore score
+                                onNext(goHome())
+                            else
+                                onNext(next goHome livesLeft (score + points))
                         } |> Async.StartImmediate))
             ))

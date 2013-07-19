@@ -21,6 +21,12 @@ module Scrabble =
         | "Q" | "Z" -> 10
         | _ -> 0
 
+    let getWordScore (str : string) =
+        let score = ref 0
+        str.ToUpper() |> String.iter (fun c ->
+            score := !score + getScore(c.ToString()))
+        !score
+
     let tiles (str : string) =
         let str = str.ToUpper()
         let words = str.Split [|' '|]
@@ -42,9 +48,41 @@ module Scrabble =
 
 [<JS>]
 module Style =
-    let title tag = tag |> addClass "app-title"
-    let definition tag = tag |> addClass "word-definition"
+    let title = "app-title"
+    let definition = "word-definition"
+    let menu = "menu-area"
 
 [<JS>]
 module Animate =
     let tada tag = tag |> addClass "tada"
+
+[<JS>]
+module Statistics =
+    open Scripting
+
+    let mutable isLoaded = false
+    let mutable gameScores = [||] : int []
+    let mutable troublesomeWordsGen2 = [||] : int []
+    let mutable troublesomeWordsGen1 = [||] : int []
+    let mutable troublesomeWordsGen0 = [||] : int []
+
+    let ensureLoaded() =
+        if not isLoaded then
+            match tryFindItem "gameScores" with
+            | Some storedScores ->
+                gameScores <- storedScores |> parse<int []>
+            | None -> ()
+            isLoaded <- true
+
+    let calcHighScore() = 
+        ensureLoaded()
+        if gameScores.Length = 0 then 0
+        else gameScores |> Array.max
+
+    let save() =
+        stringify gameScores 
+        |> addItem "gameScores"
+
+    let addScore score =
+        gameScores <- Array.append [|score|] gameScores
+        save()
