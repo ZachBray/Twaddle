@@ -6,10 +6,10 @@
         id        = "com.typeinferred.twaddle"
         version   = "1.0.0">
 
-    <name>Twaddler</name>
+    <name>Twaddle</name>
 
     <description>
-        A fun word game that will improve your vocabulary.
+        The word definition game that will improve your vocabulary.
     </description>
 
     <author href="http://typeinferred.com" email="zach@typeinferred.com">
